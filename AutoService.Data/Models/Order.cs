@@ -1,28 +1,31 @@
 namespace AutoService.Data.Models
 {
     using System;
-    using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
-    using System.Data.Entity.Spatial;
 
     [Table("Order")]
     public partial class Order
     {
-        public int id { get; set; }
+        [Column(name: "id")]
+        public int Id { get; set; }
 
-        public int client_id { get; set; }
+        [Column(name: "client_id")]
+        public int ClientId { get; set; }
 
-        public int car_id { get; set; }
+        [Column(name: "car_id")]
+        public int CarId { get; set; }
 
-        public int work_type_id { get; set; }
+        [Column(name: "work_type_id")]
+        public int WorkTypeId { get; set; }
 
-        public DateTime start_date { get; set; }
+        [Column(name: "start_date")]
+        public DateTime StartDate { get; set; }
 
-        public DateTime? end_date { get; set; }
+        [Column(name: "end_date")]
+        public DateTime? EndDate { get; set; }
 
-        [Column(TypeName = "money")]
-        public decimal cost { get; set; }
+        [Column(name: "", TypeName = "money")]
+        public decimal Cost { get; set; }
 
         public virtual Car Car { get; set; }
 

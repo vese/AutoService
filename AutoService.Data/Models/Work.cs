@@ -1,10 +1,8 @@
 namespace AutoService.Data.Models
 {
-    using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
-    using System.Data.Entity.Spatial;
 
     [Table("Work")]
     public partial class Work
@@ -15,11 +13,13 @@ namespace AutoService.Data.Models
             Orders = new HashSet<Order>();
         }
 
-        public int id { get; set; }
+        [Column(name: "id")]
+        public int Id { get; set; }
 
         [Required]
         [StringLength(100)]
-        public string name { get; set; }
+        [Column(name: "name")]
+        public string Name { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Order> Orders { get; set; }

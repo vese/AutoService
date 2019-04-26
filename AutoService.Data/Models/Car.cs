@@ -1,10 +1,7 @@
 namespace AutoService.Data.Models
 {
-    using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
-    using System.Data.Entity.Spatial;
 
     [Table("Car")]
     public partial class Car
@@ -15,17 +12,23 @@ namespace AutoService.Data.Models
             Orders = new HashSet<Order>();
         }
 
-        public int id { get; set; }
+        [Column(name: "id")]
+        public int Id { get; set; }
 
-        public int model_id { get; set; }
+        [Column(name: "model_id")]
+        public int ModelId { get; set; }
 
-        public int owner_id { get; set; }
+        [Column(name: "owner_id")]
+        public int OwnerId { get; set; }
 
-        public short manufacturing_year { get; set; }
+        [Column(name: "manufacturing_year")]
+        public short ManufacturingYear { get; set; }
 
-        public int transmission_id { get; set; }
+        [Column(name: "transmission_id")]
+        public int TransmissionId { get; set; }
 
-        public short engine_power { get; set; }
+        [Column(name: "engine_power")]
+        public short EnginePower { get; set; }
 
         public virtual Model Model { get; set; }
 

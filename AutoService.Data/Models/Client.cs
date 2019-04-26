@@ -1,10 +1,8 @@
 namespace AutoService.Data.Models
 {
-    using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
-    using System.Data.Entity.Spatial;
 
     [Table("Client")]
     public partial class Client
@@ -20,17 +18,22 @@ namespace AutoService.Data.Models
 
         [Required]
         [StringLength(30)]
-        public string name { get; set; }
+        [Column(name: "name")]
+        public string Name { get; set; }
 
         [StringLength(30)]
-        public string surname { get; set; }
+        [Column(name: "surname")]
+        public string Surname { get; set; }
 
         [StringLength(30)]
-        public string patronymic { get; set; }
+        [Column(name: "patronymic")]
+        public string Patronymic { get; set; }
 
-        public short birth_year { get; set; }
+        [Column(name: "birth_year")]
+        public short BirthYear { get; set; }
 
-        public decimal phone_number { get; set; }
+        [Column(name: "phone_number")]
+        public decimal PhoneNumber { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Car> Cars { get; set; }
