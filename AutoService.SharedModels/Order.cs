@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AutoService.Data.ViewModels
+namespace AutoService.SharedModels
 {
     public class Order
     {

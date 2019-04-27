@@ -4,6 +4,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoService.Data", "AutoService.Data\AutoService.Data.csproj", "{4AFC40C9-F9CA-4AFA-8026-1137A65996EE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{64185A7C-193D-4187-8CDB-853C8CE876E8} = {64185A7C-193D-4187-8CDB-853C8CE876E8}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoService.WebAPI", "AutoService.WebAPI\AutoService.WebAPI.csproj", "{8D3C7047-E99D-4D13-94BF-28995EA3F530}"
+	ProjectSection(ProjectDependencies) = postProject
+		{64185A7C-193D-4187-8CDB-853C8CE876E8} = {64185A7C-193D-4187-8CDB-853C8CE876E8}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoService.Client", "AutoService.Client\AutoService.Client.csproj", "{A3CF1484-570E-4E4D-A273-1BFBBD9C8A43}"
+	ProjectSection(ProjectDependencies) = postProject
+		{64185A7C-193D-4187-8CDB-853C8CE876E8} = {64185A7C-193D-4187-8CDB-853C8CE876E8}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoService.SharedModels", "AutoService.SharedModels\AutoService.SharedModels.csproj", "{64185A7C-193D-4187-8CDB-853C8CE876E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +30,18 @@ Global
 		{4AFC40C9-F9CA-4AFA-8026-1137A65996EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AFC40C9-F9CA-4AFA-8026-1137A65996EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AFC40C9-F9CA-4AFA-8026-1137A65996EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D3C7047-E99D-4D13-94BF-28995EA3F530}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D3C7047-E99D-4D13-94BF-28995EA3F530}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D3C7047-E99D-4D13-94BF-28995EA3F530}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D3C7047-E99D-4D13-94BF-28995EA3F530}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3CF1484-570E-4E4D-A273-1BFBBD9C8A43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3CF1484-570E-4E4D-A273-1BFBBD9C8A43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3CF1484-570E-4E4D-A273-1BFBBD9C8A43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3CF1484-570E-4E4D-A273-1BFBBD9C8A43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64185A7C-193D-4187-8CDB-853C8CE876E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64185A7C-193D-4187-8CDB-853C8CE876E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64185A7C-193D-4187-8CDB-853C8CE876E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64185A7C-193D-4187-8CDB-853C8CE876E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

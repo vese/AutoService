@@ -6,11 +6,11 @@ namespace AutoService.Data
 {
     public class DBDataProvider : IAutoServiceDataProvider
     {
-        public List<ViewModels.Order> GetOrders()
+        public List<SharedModels.Order> GetOrders()
         {
             using (var context = new AutoServiceContext())
             {
-                return context.Orders.Select(o => new ViewModels.Order
+                return context.Orders.Select(o => new SharedModels.Order
                 {
                     Id = o.Id,
                     Make = o.Car.Model.Make.Name,
@@ -26,14 +26,14 @@ namespace AutoService.Data
             }
         }
 
-        public ViewModels.Client GetClient(int orderId)
+        public SharedModels.Client GetClient(int orderId)
         {
             using (var context = new AutoServiceContext())
             {
                 if (context.Orders.Any(o => o.Id == orderId))
                 {
                     var client = context.Orders.Find(orderId).Client;
-                    return new ViewModels.Client()
+                    return new SharedModels.Client()
                     {
                         Surname = client.Surname,
                         Name = client.Name,

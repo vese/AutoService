@@ -1,11 +1,10 @@
-﻿using AutoService.Data.ViewModels;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace AutoService.Data
 {
     interface IAutoServiceDataProvider
     {
-        List<Order> GetOrders();
-        Client GetClient(int orderId);
+        List<SharedModels.Order> GetOrders();
+        SharedModels.Client GetClient(int orderId);
     }
 }

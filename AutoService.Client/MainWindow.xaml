@@ -1,0 +1,28 @@
+﻿<Window x:Class="AutoService.Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoService.Client"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="516.86" Width="1101.024">
+    <Grid Margin="0,0,-8,0">
+        <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding Orders}" SelectedItem="{Binding SelectedOrder}" CanUserAddRows="False" HorizontalAlignment="Left" Height="365" Margin="10,41,0,0" VerticalAlignment="Top" Width="1069">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id заказа" Binding="{Binding Id}"/>
+                <DataGridTextColumn Header="Марка авто" Binding="{Binding Make}"/>
+                <DataGridTextColumn Header="Модель авто" Binding="{Binding Model}" />
+                <DataGridTextColumn Header="Год выпуска авто" Binding="{Binding ManufacturingYear}" />
+                <DataGridTextColumn Header="Тип трансмиссии" Binding="{Binding Transmission}" />
+                <DataGridTextColumn Header="Мощность двигателя" Binding="{Binding EnginePower}" />
+                <DataGridTextColumn Header="Наименование работ" Binding="{Binding WorkType}" />
+                <DataGridTextColumn Header="Время начала работ" Binding="{Binding StartDate}" />
+                <DataGridTextColumn Header="Время окончания работ" Binding="{Binding EndDate}" />
+                <DataGridTextColumn Header="Стоимость работ" Binding="{Binding Cost}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="{Binding SelectedClient}" HorizontalAlignment="Left" Margin="18,428,0,0" VerticalAlignment="Top"/>
+        <Button Content="Загрузить данные" Command="{Binding GetOrdersCommand}" HorizontalAlignment="Left" Margin="18,10,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>
