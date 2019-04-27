@@ -1,4 +1,5 @@
-﻿using System.Collections.ObjectModel;
+﻿using Apex.MVVM;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
@@ -7,8 +8,8 @@ namespace AutoService.Client
 {
     class OrdersViewModel : INotifyPropertyChanged
     {
-        private ObservableCollection<SharedModels.Order> _orders = new ObservableCollection<SharedModels.Order>();
-        public ObservableCollection<SharedModels.Order> Orders
+        private SafeObservableCollection<SharedModels.Order> _orders = new SafeObservableCollection<SharedModels.Order>();
+        public SafeObservableCollection<SharedModels.Order> Orders
         {
             get { return _orders; }
             set
@@ -36,11 +37,12 @@ namespace AutoService.Client
                 OnPropertyChanged("SelectedClient");
             }
         }
+
         public ICommand GetOrdersCommand { get; private set; }
 
         public OrdersViewModel()
         {
-            GetOrdersCommand = new Command(() =>
+            GetOrdersCommand = new AsynchronousCommand(() =>
             {
                 Orders.Clear();
                 GetRequests.GetOrders().ForEach(o => Orders.Add(o));
@@ -48,7 +50,6 @@ namespace AutoService.Client
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
-
         public void OnPropertyChanged([CallerMemberName]string prop = "")
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));

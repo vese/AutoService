@@ -7,7 +7,7 @@ namespace AutoService.Client
     public static class GetRequests
     {
         static readonly string baseAdress = "http://localhost:56598/";
-        static readonly string controllerName = "api/values/";
+        static readonly string controllerName = "api/AutoService/";
 
         public static List<SharedModels.Order> GetOrders()
         {

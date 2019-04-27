@@ -4,7 +4,7 @@ using System.Web.Http;
 
 namespace AutoService.WebAPI.Controllers
 {
-    public class ValuesController : ApiController
+    public class AutoServiceController : ApiController
     {
         // GET api/values
         public List<SharedModels.Order> Get()

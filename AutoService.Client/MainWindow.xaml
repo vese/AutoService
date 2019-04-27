@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AutoService.Client"
         mc:Ignorable="d"
-        Title="MainWindow" Height="516.86" Width="1101.024">
+        Title="MainWindow" Height="516.86" Width="1530.024">
     <Grid Margin="0,0,-8,0">
-        <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding Orders}" SelectedItem="{Binding SelectedOrder}" CanUserAddRows="False" HorizontalAlignment="Left" Height="365" Margin="10,41,0,0" VerticalAlignment="Top" Width="1069">
+        <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding Orders}" SelectedItem="{Binding SelectedOrder}" CanUserAddRows="False" HorizontalAlignment="Left" Height="365" Margin="10,41,0,0" VerticalAlignment="Top" Width="1492">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Id заказа" Binding="{Binding Id}"/>
                 <DataGridTextColumn Header="Марка авто" Binding="{Binding Make}"/>
@@ -22,7 +22,7 @@
             </DataGrid.Columns>
         </DataGrid>
         <Label Content="{Binding SelectedClient}" HorizontalAlignment="Left" Margin="18,428,0,0" VerticalAlignment="Top"/>
-        <Button Content="Загрузить данные" Command="{Binding GetOrdersCommand}" HorizontalAlignment="Left" Margin="18,10,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Загрузить данные" Command="{Binding GetOrdersCommand}" HorizontalAlignment="Left" Margin="18,10,0,0" VerticalAlignment="Top" Width="132"/>
 
     </Grid>
 </Window>
