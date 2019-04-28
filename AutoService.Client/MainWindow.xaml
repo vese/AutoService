@@ -4,9 +4,19 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AutoService.Client"
+        xmlns:r="clr-namespace:AutoService.SharedModels;assembly=AutoService.SharedModels"
+        xmlns:l="clr-namespace:Apex.Converters;assembly=Apex"
         mc:Ignorable="d"
         Title="MainWindow" Height="516.86" Width="1530.024">
     <Grid Margin="0,0,-8,0">
+        <Grid.Resources>
+            <l:EnumToBooleanConverter x:Key="enumToBooleanConverter" />
+        </Grid.Resources>
+        <Label Content="Источник данных:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,8,0,0"/>
+        <RadioButton IsChecked="{Binding Path=SelectedDataSource, Converter={StaticResource enumToBooleanConverter}, ConverterParameter={x:Static r:AutoServiceDataSource.DB}}" Content="База данных" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="125,14,0,0"/>
+        <RadioButton IsChecked="{Binding Path=SelectedDataSource, Converter={StaticResource enumToBooleanConverter}, ConverterParameter={x:Static r:AutoServiceDataSource.XML}}" Content="XML файл" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="217,14,0,0"/>
+        <RadioButton IsChecked="{Binding Path=SelectedDataSource, Converter={StaticResource enumToBooleanConverter}, ConverterParameter={x:Static r:AutoServiceDataSource.Binary}}" Content="Бинарный файл" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="295,14,0,0"/>
+        <Button Content="Загрузить данные" Command="{Binding GetOrdersCommand}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Margin="428,11,0,0"/>
         <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding Orders}" SelectedItem="{Binding SelectedOrder}" CanUserAddRows="False" HorizontalAlignment="Left" Height="365" Margin="10,41,0,0" VerticalAlignment="Top" Width="1492">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Id заказа" Binding="{Binding Id}"/>
@@ -22,7 +32,6 @@
             </DataGrid.Columns>
         </DataGrid>
         <Label Content="{Binding SelectedClient}" HorizontalAlignment="Left" Margin="18,428,0,0" VerticalAlignment="Top"/>
-        <Button Content="Загрузить данные" Command="{Binding GetOrdersCommand}" HorizontalAlignment="Left" Margin="18,10,0,0" VerticalAlignment="Top" Width="132"/>
-
+        <Label Content="{Binding SelectedDataSource}" HorizontalAlignment="Left" Margin="600,13,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.6,-0.2"/>
     </Grid>
 </Window>

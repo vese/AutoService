@@ -143,7 +143,7 @@ INSERT INTO Model(name, make_id) VALUES
 ('X5', (SELECT id FROM Make WHERE name = 'BMW')),
 ('X6', (SELECT id FROM Make WHERE name = 'BMW'))
 GO
-INSERT INTO Client(name, surname, patronymic, birth_year, phone_number) VALUES
+INSERT INTO Client(surname, name, patronymic, birth_year, phone_number) VALUES
 ('Цуцкиха', 'Валентина', 'Юлиевна', 1965, 78297759405),
 ('Дагина', 'Любовь', 'Леонидовна', 1979, 77798062300),
 ('Ивашкин', 'Владимир', 'Юриевич', 1988, 78508343408),
@@ -264,14 +264,14 @@ INSERT INTO [Order](client_id, car_id, work_type_id, start_date, end_date, cost)
 (18,18,8, (convert(datetime,'2017-08-16 05:32:10', 120)), (convert(datetime,'2017-08-21 13:01:54', 120)),814),
 (19,19,6, (convert(datetime,'2016-05-15 23:03:06', 120)), (convert(datetime,'2016-11-08 00:52:46', 120)),9094),
 (20,20,1, (convert(datetime,'2016-07-08 20:06:11', 120)), (convert(datetime,'2016-09-03 02:09:58', 120)),2921),
-(21,21,3, (convert(datetime,'2015-04-02 06:49:03', 120)), (convert(datetime,'2015-05-30 04:46:39', 120)),9628),
+(21,21,3, (convert(datetime,'2018-04-02 06:49:03', 120)), null,9628),
 (22,22,8, (convert(datetime,'2017-08-12 09:22:54', 120)), (convert(datetime,'2018-02-25 21:39:05', 120)),4512),
 (23,23,5, (convert(datetime,'2015-02-24 11:20:53', 120)), (convert(datetime,'2015-07-31 01:56:40', 120)),6988),
 (24,24,7, (convert(datetime,'2017-03-15 14:06:26', 120)), (convert(datetime,'2017-08-21 12:16:19', 120)),8134),
 (25,25,7, (convert(datetime,'2016-01-22 12:29:50', 120)), (convert(datetime,'2016-07-21 19:12:02', 120)),4468),
 (26,26,4, (convert(datetime,'2015-05-30 17:55:22', 120)), (convert(datetime,'2015-09-22 22:21:46', 120)),2949),
 (27,27,3, (convert(datetime,'2016-10-25 22:45:42', 120)), (convert(datetime,'2017-06-01 12:23:17', 120)),7662),
-(28,28,6, (convert(datetime,'2015-08-18 05:44:48', 120)), (convert(datetime,'2015-11-11 08:41:00', 120)),2850),
+(28,28,6, (convert(datetime,'2018-08-18 05:44:48', 120)), null,2850),
 (29,29,8, (convert(datetime,'2015-07-02 23:22:15', 120)), (convert(datetime,'2015-08-31 09:27:52', 120)),3203),
 (30,30,2, (convert(datetime,'2016-03-25 04:41:53', 120)), (convert(datetime,'2016-10-01 13:33:03', 120)),5080),
 (31,31,7, (convert(datetime,'2015-07-16 00:23:20', 120)), (convert(datetime,'2015-10-09 11:39:26', 120)),9510),
@@ -287,7 +287,7 @@ INSERT INTO [Order](client_id, car_id, work_type_id, start_date, end_date, cost)
 (1,41,7, (convert(datetime,'2018-04-10 22:00:52', 120)), (convert(datetime,'2018-04-19 06:52:31', 120)),7185),
 (2,42,7, (convert(datetime,'2017-11-06 13:58:29', 120)), (convert(datetime,'2018-02-08 10:40:46', 120)),6521),
 (3,43,2, (convert(datetime,'2016-05-24 19:50:46', 120)), (convert(datetime,'2017-05-03 15:01:06', 120)),7147),
-(4,44,1, (convert(datetime,'2015-12-05 16:52:20', 120)), (convert(datetime,'2018-06-10 09:18:26', 120)),9168),
+(4,44,1, (convert(datetime,'2018-12-05 16:52:20', 120)), null,9168),
 (5,45,6, (convert(datetime,'2017-08-23 19:17:41', 120)), (convert(datetime,'2017-09-15 17:30:04', 120)),3880),
 (4,44,3, (convert(datetime,'2017-04-10 22:00:52', 120)), (convert(datetime,'2017-04-19 06:52:31', 120)),7185),
 (5,5,2, (convert(datetime,'2018-11-06 13:58:29', 120)), (convert(datetime,'2019-02-08 10:40:46', 120)),6521),

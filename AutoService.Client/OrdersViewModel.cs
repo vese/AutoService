@@ -1,5 +1,5 @@
 ﻿using Apex.MVVM;
-using System.Collections.ObjectModel;
+using AutoService.SharedModels;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
@@ -8,8 +8,8 @@ namespace AutoService.Client
 {
     class OrdersViewModel : INotifyPropertyChanged
     {
-        private SafeObservableCollection<SharedModels.Order> _orders = new SafeObservableCollection<SharedModels.Order>();
-        public SafeObservableCollection<SharedModels.Order> Orders
+        private SafeObservableCollection<Order> _orders = new SafeObservableCollection<Order>();
+        public SafeObservableCollection<Order> Orders
         {
             get { return _orders; }
             set
@@ -19,11 +19,11 @@ namespace AutoService.Client
             }
         }
 
-        public SharedModels.Order SelectedOrder
+        public Order SelectedOrder
         {
             set
             {
-                SelectedClient = GetRequests.GetClient(value.Id);
+                SelectedClient = GetRequests.GetClient(value.Id, SelectedDataSource);
             }
         }
 
@@ -45,8 +45,23 @@ namespace AutoService.Client
             GetOrdersCommand = new AsynchronousCommand(() =>
             {
                 Orders.Clear();
-                GetRequests.GetOrders().ForEach(o => Orders.Add(o));
+                SelectedClient = null;
+                GetRequests.GetOrders(SelectedDataSource).ForEach(o => Orders.Add(o));
             });
+        }
+
+        private AutoServiceDataSource _selectedDataSource = AutoServiceDataSource.DB;
+        public AutoServiceDataSource SelectedDataSource
+        {
+            get
+            {
+                return _selectedDataSource;
+            }
+            set
+            {
+                _selectedDataSource = value;
+                OnPropertyChanged("SelectedDataSource");
+            }
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
