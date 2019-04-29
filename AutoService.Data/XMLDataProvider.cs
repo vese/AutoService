@@ -42,7 +42,7 @@ namespace AutoService.Data
                 context.Clients.ToList().ForEach(c =>
                 {
                     clients.Add(new XElement("Client",
-                        new XElement("Id", c.id),
+                        new XElement("Id", c.Id),
                         new XElement("Surname", c.Surname),
                         new XElement("Name", c.Name),
                         new XElement("Patronymic", c.Patronymic),
@@ -70,7 +70,7 @@ namespace AutoService.Data
             return XDocument.Load(dir + fileName).Element("AutoService").Element("Orders").Elements("Order").Select(o =>
             {
                 DateTime end;
-                bool ended = o.Element("EndDate").Value != null;
+                bool ended = !string.IsNullOrEmpty(o.Element("EndDate").Value);
                 if (int.TryParse(o.Element("Id").Value, out int id) &&
                 short.TryParse(o.Element("ManufacturingYear").Value, out short mYear) &&
                 short.TryParse(o.Element("EnginePower").Value, out short enPower) &&
@@ -105,7 +105,7 @@ namespace AutoService.Data
             }
             var client = XDocument.Load(dir + fileName).Element("AutoService").Element("Clients").Elements("Client").FirstOrDefault(c => c.Element("Id").Value == clientId);
             return client == null ? null :
-                short.TryParse(client.Element("BirthYear").Value, out short bYear) ? 
+                short.TryParse(client.Element("BirthYear").Value, out short bYear) ?
                 new SharedModels.Client
                 {
                     Name = client.Element("Name").Value,

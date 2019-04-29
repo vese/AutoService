@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BinaryDataProvider.cs" />
     <Compile Include="XMLDataProvider.cs" />
     <Compile Include="DBDataProvider.cs" />
     <Compile Include="IAutoServiceDataProvider.cs" />

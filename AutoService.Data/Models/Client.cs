@@ -14,7 +14,8 @@ namespace AutoService.Data.Models
             Orders = new HashSet<Order>();
         }
 
-        public int id { get; set; }
+        [Column(name: "id")]
+        public int Id { get; set; }
 
         [Required]
         [StringLength(30)]

@@ -2,6 +2,7 @@
 using AutoService.SharedModels;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Windows;
 using System.Windows.Input;
 
 namespace AutoService.Client
@@ -23,7 +24,7 @@ namespace AutoService.Client
         {
             set
             {
-                SelectedClient = GetRequests.GetClient(value.Id, SelectedDataSource);
+                SelectedClient = GetRequests.GetClient(value.Id, LoadedDataSource);
             }
         }
 
@@ -47,6 +48,8 @@ namespace AutoService.Client
                 Orders.Clear();
                 SelectedClient = null;
                 GetRequests.GetOrders(SelectedDataSource).ForEach(o => Orders.Add(o));
+                Loaded = Visibility.Visible;
+                LoadedDataSource = SelectedDataSource;
             });
         }
 
@@ -61,6 +64,34 @@ namespace AutoService.Client
             {
                 _selectedDataSource = value;
                 OnPropertyChanged("SelectedDataSource");
+            }
+        }
+
+        private AutoServiceDataSource _loadedDataSource;
+        public AutoServiceDataSource LoadedDataSource
+        {
+            get
+            {
+                return _loadedDataSource;
+            }
+            set
+            {
+                _loadedDataSource = value;
+                OnPropertyChanged("LoadedDataSource");
+            }
+        }
+
+        private Visibility _loaded = Visibility.Hidden;
+        public Visibility Loaded
+        {
+            get
+            {
+                return _loaded;
+            }
+            set
+            {
+                _loaded = value;
+                OnPropertyChanged("Loaded");
             }
         }
 

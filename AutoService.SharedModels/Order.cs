@@ -2,6 +2,7 @@
 
 namespace AutoService.SharedModels
 {
+    [Serializable]
     public class Order
     {
         public int Id { get; set; }

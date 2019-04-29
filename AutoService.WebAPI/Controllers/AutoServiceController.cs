@@ -15,8 +15,8 @@ namespace AutoService.WebAPI.Controllers
             {
                 case AutoServiceDataSource.XML:
                     return new XMLDataProvider(DataDirectory()).GetOrders();
-                //case AutoServiceDataSource.Binary:
-                //    return new BinaryDataProvider(DataDirectory()).GetOrders();
+                case AutoServiceDataSource.Binary:
+                    return new BinaryDataProvider(DataDirectory()).GetOrders();
                 default:
                     return new DBDataProvider().GetOrders();
             }
@@ -29,8 +29,8 @@ namespace AutoService.WebAPI.Controllers
             {
                 case AutoServiceDataSource.XML:
                     return new XMLDataProvider(DataDirectory()).GetClient(id);
-                //case AutoServiceDataSource.Binary:
-                //return new DBDataProvider(DataDirectory()).GetClient(id);
+                case AutoServiceDataSource.Binary:
+                    return new BinaryDataProvider(DataDirectory()).GetClient(id);
                 default:
                     return new DBDataProvider().GetClient(id);
             }

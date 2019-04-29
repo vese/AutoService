@@ -1,5 +1,8 @@
-﻿namespace AutoService.SharedModels
+﻿using System;
+
+namespace AutoService.SharedModels
 {
+    [Serializable]
     public class Client
     {
         public string Surname { get; set; }
