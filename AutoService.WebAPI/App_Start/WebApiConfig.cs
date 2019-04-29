@@ -1,4 +1,7 @@
 ﻿using System.Web.Http;
+using Unity;
+using Unity.AspNet.WebApi;
+using Unity.Lifetime;
 
 namespace AutoService.WebAPI
 {
@@ -7,6 +10,9 @@ namespace AutoService.WebAPI
         public static void Register(HttpConfiguration config)
         {
             // Конфигурация и службы веб-API
+            var container = new UnityContainer();
+            container.RegisterType<IUnityContainer, UnityContainer>(new HierarchicalLifetimeManager());
+            config.DependencyResolver = new UnityDependencyResolver(container);
 
             // Маршруты веб-API
             config.MapHttpAttributeRoutes();

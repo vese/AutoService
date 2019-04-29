@@ -3,23 +3,37 @@ using AutoService.SharedModels;
 using System.Collections.Generic;
 using System.Web;
 using System.Web.Http;
+using Unity;
+using Unity.Lifetime;
+using Unity.Resolution;
 
 namespace AutoService.WebAPI.Controllers
 {
     public class AutoServiceController : ApiController
     {
+        private IUnityContainer _container;
+
+        public AutoServiceController(IUnityContainer container)
+        {
+            _container = container;
+        }
+
         // GET api/AutoService
         public List<Order> Get(AutoServiceDataSource dataSource = AutoServiceDataSource.DB)
         {
             switch (dataSource)
             {
                 case AutoServiceDataSource.XML:
-                    return new XMLDataProvider(DataDirectory()).GetOrders();
+                    _container.RegisterType<IAutoServiceDataProvider, XMLDataProvider>(new ContainerControlledLifetimeManager());
+                    break;
                 case AutoServiceDataSource.Binary:
-                    return new BinaryDataProvider(DataDirectory()).GetOrders();
+                    _container.RegisterType<IAutoServiceDataProvider, BinaryDataProvider>(new ContainerControlledLifetimeManager());
+                    break;
                 default:
-                    return new DBDataProvider().GetOrders();
+                    _container.RegisterType<IAutoServiceDataProvider, DBDataProvider>(new ContainerControlledLifetimeManager());
+                    break;
             }
+            return _container.Resolve<IAutoServiceDataProvider>(new ParameterOverride("dir", DataDirectory())).GetOrders();
         }
 
         // GET api/AutoService/5
@@ -28,12 +42,16 @@ namespace AutoService.WebAPI.Controllers
             switch (dataSource)
             {
                 case AutoServiceDataSource.XML:
-                    return new XMLDataProvider(DataDirectory()).GetClient(id);
+                    _container.RegisterType<IAutoServiceDataProvider, XMLDataProvider>(new ContainerControlledLifetimeManager());
+                    break;
                 case AutoServiceDataSource.Binary:
-                    return new BinaryDataProvider(DataDirectory()).GetClient(id);
+                    _container.RegisterType<IAutoServiceDataProvider, BinaryDataProvider>(new ContainerControlledLifetimeManager());
+                    break;
                 default:
-                    return new DBDataProvider().GetClient(id);
+                    _container.RegisterType<IAutoServiceDataProvider, DBDataProvider>(new ContainerControlledLifetimeManager());
+                    break;
             }
+            return _container.Resolve<IAutoServiceDataProvider>(new ParameterOverride("dir", DataDirectory())).GetClient(id);
         }
 
         private string DataDirectory()
