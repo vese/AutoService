@@ -3,531 +3,531 @@
   <Orders>
     <Order>
       <Id>1</Id>
-      <Make>Audi</Make>
-      <Model>A1</Model>
-      <ManufacturingYear>2010</ManufacturingYear>
-      <Transmission>Автоматическая</Transmission>
-      <EnginePower>122</EnginePower>
-      <WorkType>Шиномонтажные работы</WorkType>
-      <StartDate>2018-03-01T23:05:06</StartDate>
-      <EndDate>2018-03-10T23:36:11</EndDate>
-      <Cost>4762.0000</Cost>
-    </Order>
-    <Order>
-      <Id>2</Id>
-      <Make>Audi</Make>
-      <Model>A2</Model>
-      <ManufacturingYear>2007</ManufacturingYear>
-      <Transmission>Механическая</Transmission>
-      <EnginePower>115</EnginePower>
-      <WorkType>Ремонт электрики в машинах</WorkType>
-      <StartDate>2015-09-12T23:26:54</StartDate>
-      <EndDate>2016-02-15T21:22:45</EndDate>
-      <Cost>9976.0000</Cost>
-    </Order>
-    <Order>
-      <Id>3</Id>
-      <Make>Audi</Make>
-      <Model>A3</Model>
-      <ManufacturingYear>2015</ManufacturingYear>
-      <Transmission>Механическая</Transmission>
-      <EnginePower>150</EnginePower>
-      <WorkType>Обслуживание и ремонт двигателей</WorkType>
-      <StartDate>2017-01-23T00:49:47</StartDate>
-      <EndDate>2017-06-08T01:15:30</EndDate>
-      <Cost>2360.0000</Cost>
-    </Order>
-    <Order>
-      <Id>4</Id>
-      <Make>Audi</Make>
-      <Model>A4</Model>
-      <ManufacturingYear>1995</ManufacturingYear>
-      <Transmission>Автоматическая</Transmission>
-      <EnginePower>125</EnginePower>
-      <WorkType>Обслуживание и ремонт двигателей</WorkType>
-      <StartDate>2015-12-03T02:10:16</StartDate>
-      <EndDate>2016-05-17T19:15:58</EndDate>
-      <Cost>6771.0000</Cost>
-    </Order>
-    <Order>
-      <Id>5</Id>
-      <Make>Audi</Make>
-      <Model>A5</Model>
-      <ManufacturingYear>2014</ManufacturingYear>
-      <Transmission>Вариатор</Transmission>
-      <EnginePower>204</EnginePower>
-      <WorkType>Кузовной ремонт</WorkType>
-      <StartDate>2015-01-09T01:40:33</StartDate>
-      <EndDate>2017-04-08T03:30:32</EndDate>
-      <Cost>3733.0000</Cost>
-    </Order>
-    <Order>
-      <Id>6</Id>
-      <Make>Audi</Make>
-      <Model>A6</Model>
-      <ManufacturingYear>1994</ManufacturingYear>
-      <Transmission>Автоматическая</Transmission>
-      <EnginePower>90</EnginePower>
-      <WorkType>Ремонт электрики в машинах</WorkType>
-      <StartDate>2016-10-22T23:40:56</StartDate>
-      <EndDate>2017-02-15T11:15:49</EndDate>
-      <Cost>8195.0000</Cost>
-    </Order>
-    <Order>
-      <Id>7</Id>
-      <Make>Audi</Make>
-      <Model>A7</Model>
-      <ManufacturingYear>2010</ManufacturingYear>
-      <Transmission>Автоматическая</Transmission>
-      <EnginePower>204</EnginePower>
-      <WorkType>Шиномонтажные работы</WorkType>
-      <StartDate>2017-07-31T16:38:56</StartDate>
-      <EndDate>2017-12-14T19:05:28</EndDate>
-      <Cost>2526.0000</Cost>
-    </Order>
-    <Order>
-      <Id>8</Id>
-      <Make>Audi</Make>
-      <Model>A8</Model>
-      <ManufacturingYear>1998</ManufacturingYear>
-      <Transmission>Автоматическая</Transmission>
-      <EnginePower>150</EnginePower>
-      <WorkType>Обслуживание и ремонт кондиционеров в авто</WorkType>
-      <StartDate>2015-08-02T07:19:36</StartDate>
-      <EndDate>2015-09-24T15:31:40</EndDate>
-      <Cost>7360.0000</Cost>
-    </Order>
-    <Order>
-      <Id>9</Id>
       <Make>BMW</Make>
       <Model>i3</Model>
       <ManufacturingYear>2013</ManufacturingYear>
       <Transmission>Автоматическая</Transmission>
       <EnginePower>34</EnginePower>
-      <WorkType>Обслуживание и ремонт кондиционеров в авто</WorkType>
-      <StartDate>2016-01-05T00:44:08</StartDate>
-      <EndDate>2018-07-31T02:31:05</EndDate>
-      <Cost>4255.0000</Cost>
-    </Order>
-    <Order>
-      <Id>10</Id>
-      <Make>BMW</Make>
-      <Model>i8</Model>
-      <ManufacturingYear>2013</ManufacturingYear>
-      <Transmission>Автоматическая</Transmission>
-      <EnginePower>231</EnginePower>
-      <WorkType>Регламентное ТО</WorkType>
-      <StartDate>2015-05-29T12:17:19</StartDate>
-      <EndDate>2016-03-07T03:31:34</EndDate>
-      <Cost>2442.0000</Cost>
-    </Order>
-    <Order>
-      <Id>11</Id>
-      <Make>BMW</Make>
-      <Model>X1</Model>
-      <ManufacturingYear>2012</ManufacturingYear>
-      <Transmission>Механическая</Transmission>
-      <EnginePower>245</EnginePower>
-      <WorkType>Регламентное ТО</WorkType>
-      <StartDate>2017-01-25T19:51:06</StartDate>
-      <EndDate>2018-04-06T21:30:36</EndDate>
-      <Cost>5190.0000</Cost>
-    </Order>
-    <Order>
-      <Id>12</Id>
-      <Make>BMW</Make>
-      <Model>X3</Model>
-      <ManufacturingYear>2010</ManufacturingYear>
-      <Transmission>Автоматическая</Transmission>
-      <EnginePower>177</EnginePower>
-      <WorkType>Обслуживание и ремонт кондиционеров в авто</WorkType>
-      <StartDate>2014-11-23T06:51:29</StartDate>
-      <EndDate>2016-05-20T21:02:55</EndDate>
-      <Cost>8643.0000</Cost>
-    </Order>
-    <Order>
-      <Id>13</Id>
-      <Make>BMW</Make>
-      <Model>X4</Model>
-      <ManufacturingYear>2014</ManufacturingYear>
-      <Transmission>Автоматическая</Transmission>
-      <EnginePower>190</EnginePower>
-      <WorkType>Ремонт коробок передач</WorkType>
-      <StartDate>2017-08-19T15:51:05</StartDate>
-      <EndDate>2017-11-29T02:15:44</EndDate>
-      <Cost>9657.0000</Cost>
-    </Order>
-    <Order>
-      <Id>14</Id>
-      <Make>BMW</Make>
-      <Model>X5</Model>
-      <ManufacturingYear>2017</ManufacturingYear>
-      <Transmission>Автоматическая</Transmission>
-      <EnginePower>450</EnginePower>
       <WorkType>Ремонт электрики в машинах</WorkType>
-      <StartDate>2018-01-24T13:50:08</StartDate>
-      <EndDate>2018-03-28T12:07:15</EndDate>
-      <Cost>7267.0000</Cost>
+      <StartDate>2017-10-09T19:18:11</StartDate>
+      <EndDate>2017-11-09T19:18:11</EndDate>
+      <Cost>9776.0000</Cost>
     </Order>
     <Order>
-      <Id>15</Id>
+      <Id>2</Id>
       <Make>BMW</Make>
       <Model>X6</Model>
       <ManufacturingYear>2014</ManufacturingYear>
       <Transmission>Автоматическая</Transmission>
       <EnginePower>258</EnginePower>
-      <WorkType>Ремонт коробок передач</WorkType>
-      <StartDate>2016-10-15T23:22:27</StartDate>
-      <EndDate>2017-01-18T22:24:05</EndDate>
-      <Cost>5605.0000</Cost>
-    </Order>
-    <Order>
-      <Id>16</Id>
-      <Make>Audi</Make>
-      <Model>A1</Model>
-      <ManufacturingYear>2013</ManufacturingYear>
-      <Transmission>Автоматическая</Transmission>
-      <EnginePower>140</EnginePower>
-      <WorkType>Регламентное ТО</WorkType>
-      <StartDate>2014-04-18T16:27:58</StartDate>
-      <EndDate>2014-10-03T14:09:37</EndDate>
-      <Cost>6421.0000</Cost>
-    </Order>
-    <Order>
-      <Id>17</Id>
-      <Make>Audi</Make>
-      <Model>A2</Model>
-      <ManufacturingYear>2006</ManufacturingYear>
-      <Transmission>Механическая</Transmission>
-      <EnginePower>115</EnginePower>
-      <WorkType>Кузовной ремонт</WorkType>
-      <StartDate>2015-06-23T05:19:43</StartDate>
-      <EndDate>2018-09-16T20:58:24</EndDate>
-      <Cost>3424.0000</Cost>
-    </Order>
-    <Order>
-      <Id>18</Id>
-      <Make>Audi</Make>
-      <Model>A3</Model>
-      <ManufacturingYear>1996</ManufacturingYear>
-      <Transmission>Механическая</Transmission>
-      <EnginePower>101</EnginePower>
-      <WorkType>Шиномонтажные работы</WorkType>
-      <StartDate>2017-08-16T05:32:10</StartDate>
-      <EndDate>2017-08-21T13:01:54</EndDate>
-      <Cost>814.0000</Cost>
-    </Order>
-    <Order>
-      <Id>19</Id>
-      <Make>Audi</Make>
-      <Model>A4</Model>
-      <ManufacturingYear>2001</ManufacturingYear>
-      <Transmission>Автоматическая</Transmission>
-      <EnginePower>180</EnginePower>
-      <WorkType>Ремонт электрики в машинах</WorkType>
-      <StartDate>2016-05-15T23:03:06</StartDate>
-      <EndDate>2016-11-08T00:52:46</EndDate>
-      <Cost>9094.0000</Cost>
-    </Order>
-    <Order>
-      <Id>20</Id>
-      <Make>Audi</Make>
-      <Model>A5</Model>
-      <ManufacturingYear>2011</ManufacturingYear>
-      <Transmission>Вариатор</Transmission>
-      <EnginePower>190</EnginePower>
-      <WorkType>Регламентное ТО</WorkType>
-      <StartDate>2016-07-08T20:06:11</StartDate>
-      <EndDate>2016-09-03T02:09:58</EndDate>
-      <Cost>2921.0000</Cost>
-    </Order>
-    <Order>
-      <Id>21</Id>
-      <Make>Audi</Make>
-      <Model>A6</Model>
-      <ManufacturingYear>2018</ManufacturingYear>
-      <Transmission>Автоматическая</Transmission>
-      <EnginePower>218</EnginePower>
       <WorkType>Обслуживание и ремонт двигателей</WorkType>
-      <StartDate>2018-04-02T06:49:03</StartDate>
-      <EndDate />
-      <Cost>9628.0000</Cost>
+      <StartDate>2018-10-03T03:51:02</StartDate>
+      <EndDate>2018-11-03T03:51:02</EndDate>
+      <Cost>930.0000</Cost>
     </Order>
     <Order>
-      <Id>22</Id>
-      <Make>Audi</Make>
-      <Model>A7</Model>
-      <ManufacturingYear>2012</ManufacturingYear>
-      <Transmission>Автоматическая</Transmission>
-      <EnginePower>310</EnginePower>
-      <WorkType>Шиномонтажные работы</WorkType>
-      <StartDate>2017-08-12T09:22:54</StartDate>
-      <EndDate>2018-02-25T21:39:05</EndDate>
-      <Cost>4512.0000</Cost>
-    </Order>
-    <Order>
-      <Id>23</Id>
+      <Id>3</Id>
       <Make>Audi</Make>
       <Model>A8</Model>
       <ManufacturingYear>1994</ManufacturingYear>
       <Transmission>Механическая</Transmission>
       <EnginePower>174</EnginePower>
-      <WorkType>Ремонт ходовой части, балансировка, развал-схождения</WorkType>
-      <StartDate>2015-02-24T11:20:53</StartDate>
-      <EndDate>2015-07-31T01:56:40</EndDate>
-      <Cost>6988.0000</Cost>
+      <WorkType>Ремонт электрики в машинах</WorkType>
+      <StartDate>2015-08-17T03:28:38</StartDate>
+      <EndDate>2015-09-17T03:28:38</EndDate>
+      <Cost>5203.0000</Cost>
     </Order>
     <Order>
-      <Id>24</Id>
-      <Make>BMW</Make>
-      <Model>i3</Model>
-      <ManufacturingYear>2013</ManufacturingYear>
-      <Transmission>Автоматическая</Transmission>
-      <EnginePower>34</EnginePower>
-      <WorkType>Обслуживание и ремонт кондиционеров в авто</WorkType>
-      <StartDate>2017-03-15T14:06:26</StartDate>
-      <EndDate>2017-08-21T12:16:19</EndDate>
-      <Cost>8134.0000</Cost>
-    </Order>
-    <Order>
-      <Id>25</Id>
+      <Id>4</Id>
       <Make>BMW</Make>
       <Model>i8</Model>
       <ManufacturingYear>2016</ManufacturingYear>
       <Transmission>Автоматическая</Transmission>
       <EnginePower>231</EnginePower>
-      <WorkType>Обслуживание и ремонт кондиционеров в авто</WorkType>
-      <StartDate>2016-01-22T12:29:50</StartDate>
-      <EndDate>2016-07-21T19:12:02</EndDate>
-      <Cost>4468.0000</Cost>
+      <WorkType>Шиномонтажные работы</WorkType>
+      <StartDate>2016-07-18T05:09:55</StartDate>
+      <EndDate>2016-08-18T05:09:55</EndDate>
+      <Cost>5561.0000</Cost>
     </Order>
     <Order>
-      <Id>26</Id>
-      <Make>BMW</Make>
-      <Model>X1</Model>
-      <ManufacturingYear>2013</ManufacturingYear>
-      <Transmission>Механическая</Transmission>
-      <EnginePower>245</EnginePower>
-      <WorkType>Кузовной ремонт</WorkType>
-      <StartDate>2015-05-30T17:55:22</StartDate>
-      <EndDate>2015-09-22T22:21:46</EndDate>
-      <Cost>2949.0000</Cost>
-    </Order>
-    <Order>
-      <Id>27</Id>
-      <Make>BMW</Make>
-      <Model>X3</Model>
-      <ManufacturingYear>2010</ManufacturingYear>
-      <Transmission>Механическая</Transmission>
-      <EnginePower>143</EnginePower>
-      <WorkType>Обслуживание и ремонт двигателей</WorkType>
-      <StartDate>2016-10-25T22:45:42</StartDate>
-      <EndDate>2017-06-01T12:23:17</EndDate>
-      <Cost>7662.0000</Cost>
-    </Order>
-    <Order>
-      <Id>28</Id>
-      <Make>BMW</Make>
-      <Model>X4</Model>
-      <ManufacturingYear>2016</ManufacturingYear>
-      <Transmission>Механическая</Transmission>
-      <EnginePower>190</EnginePower>
-      <WorkType>Ремонт электрики в машинах</WorkType>
-      <StartDate>2018-08-18T05:44:48</StartDate>
-      <EndDate />
-      <Cost>2850.0000</Cost>
-    </Order>
-    <Order>
-      <Id>29</Id>
+      <Id>5</Id>
       <Make>BMW</Make>
       <Model>X5</Model>
       <ManufacturingYear>2017</ManufacturingYear>
       <Transmission>Автоматическая</Transmission>
-      <EnginePower>381</EnginePower>
-      <WorkType>Шиномонтажные работы</WorkType>
-      <StartDate>2015-07-02T23:22:15</StartDate>
-      <EndDate>2015-08-31T09:27:52</EndDate>
-      <Cost>3203.0000</Cost>
+      <EnginePower>450</EnginePower>
+      <WorkType>Ремонт коробок передач</WorkType>
+      <StartDate>2017-04-12T01:22:23</StartDate>
+      <EndDate>2017-05-12T01:22:23</EndDate>
+      <Cost>6395.0000</Cost>
     </Order>
     <Order>
-      <Id>30</Id>
+      <Id>6</Id>
+      <Make>Audi</Make>
+      <Model>A3</Model>
+      <ManufacturingYear>1996</ManufacturingYear>
+      <Transmission>Автоматическая</Transmission>
+      <EnginePower>125</EnginePower>
+      <WorkType>Обслуживание и ремонт двигателей</WorkType>
+      <StartDate>2018-06-24T17:38:55</StartDate>
+      <EndDate>2018-07-24T17:38:55</EndDate>
+      <Cost>4653.0000</Cost>
+    </Order>
+    <Order>
+      <Id>7</Id>
+      <Make>BMW</Make>
+      <Model>i3</Model>
+      <ManufacturingYear>2014</ManufacturingYear>
+      <Transmission>Автоматическая</Transmission>
+      <EnginePower>34</EnginePower>
+      <WorkType>Регламентное ТО</WorkType>
+      <StartDate>2015-07-12T21:29:59</StartDate>
+      <EndDate>2015-08-12T21:29:59</EndDate>
+      <Cost>2143.0000</Cost>
+    </Order>
+    <Order>
+      <Id>8</Id>
+      <Make>Audi</Make>
+      <Model>A4</Model>
+      <ManufacturingYear>2015</ManufacturingYear>
+      <Transmission>Механическая</Transmission>
+      <EnginePower>190</EnginePower>
+      <WorkType>Кузовной ремонт</WorkType>
+      <StartDate>2017-11-29T22:28:50</StartDate>
+      <EndDate>2017-12-29T22:28:50</EndDate>
+      <Cost>4738.0000</Cost>
+    </Order>
+    <Order>
+      <Id>9</Id>
       <Make>BMW</Make>
       <Model>X6</Model>
       <ManufacturingYear>2008</ManufacturingYear>
       <Transmission>Автоматическая</Transmission>
       <EnginePower>235</EnginePower>
-      <WorkType>Ремонт коробок передач</WorkType>
-      <StartDate>2016-03-25T04:41:53</StartDate>
-      <EndDate>2016-10-01T13:33:03</EndDate>
-      <Cost>5080.0000</Cost>
+      <WorkType>Ремонт электрики в машинах</WorkType>
+      <StartDate>2018-12-10T05:02:35</StartDate>
+      <EndDate>2018-12-30T05:02:35</EndDate>
+      <Cost>1243.0000</Cost>
     </Order>
     <Order>
-      <Id>31</Id>
-      <Make>Audi</Make>
-      <Model>A1</Model>
-      <ManufacturingYear>2011</ManufacturingYear>
-      <Transmission>Механическая</Transmission>
-      <EnginePower>90</EnginePower>
-      <WorkType>Обслуживание и ремонт кондиционеров в авто</WorkType>
-      <StartDate>2015-07-16T00:23:20</StartDate>
-      <EndDate>2015-10-09T11:39:26</EndDate>
-      <Cost>9510.0000</Cost>
-    </Order>
-    <Order>
-      <Id>32</Id>
+      <Id>10</Id>
       <Make>Audi</Make>
       <Model>A2</Model>
       <ManufacturingYear>2006</ManufacturingYear>
       <Transmission>Автоматическая</Transmission>
       <EnginePower>61</EnginePower>
       <WorkType>Обслуживание и ремонт двигателей</WorkType>
-      <StartDate>2015-02-27T15:09:11</StartDate>
-      <EndDate>2015-06-09T19:49:19</EndDate>
-      <Cost>8434.0000</Cost>
+      <StartDate>2016-04-16T22:55:40</StartDate>
+      <EndDate>2016-05-16T22:55:40</EndDate>
+      <Cost>9974.0000</Cost>
     </Order>
     <Order>
-      <Id>33</Id>
-      <Make>Audi</Make>
-      <Model>A3</Model>
-      <ManufacturingYear>1996</ManufacturingYear>
-      <Transmission>Автоматическая</Transmission>
-      <EnginePower>125</EnginePower>
-      <WorkType>Обслуживание и ремонт двигателей</WorkType>
-      <StartDate>2017-11-02T17:14:19</StartDate>
-      <EndDate>2017-11-16T21:53:45</EndDate>
-      <Cost>7666.0000</Cost>
-    </Order>
-    <Order>
-      <Id>34</Id>
-      <Make>Audi</Make>
-      <Model>A4</Model>
-      <ManufacturingYear>2015</ManufacturingYear>
+      <Id>11</Id>
+      <Make>BMW</Make>
+      <Model>X4</Model>
+      <ManufacturingYear>2016</ManufacturingYear>
       <Transmission>Механическая</Transmission>
       <EnginePower>190</EnginePower>
-      <WorkType>Шиномонтажные работы</WorkType>
-      <StartDate>2015-03-14T22:12:43</StartDate>
-      <EndDate>2015-10-01T12:42:49</EndDate>
-      <Cost>1603.0000</Cost>
+      <WorkType>Кузовной ремонт</WorkType>
+      <StartDate>2018-03-23T16:43:41</StartDate>
+      <EndDate>2018-04-23T16:43:41</EndDate>
+      <Cost>1333.0000</Cost>
     </Order>
     <Order>
-      <Id>35</Id>
+      <Id>12</Id>
+      <Make>BMW</Make>
+      <Model>X5</Model>
+      <ManufacturingYear>2017</ManufacturingYear>
+      <Transmission>Автоматическая</Transmission>
+      <EnginePower>381</EnginePower>
+      <WorkType>Ремонт электрики в машинах</WorkType>
+      <StartDate>2017-06-05T14:22:30</StartDate>
+      <EndDate>2017-07-05T14:22:30</EndDate>
+      <Cost>1000.0000</Cost>
+    </Order>
+    <Order>
+      <Id>13</Id>
       <Make>Audi</Make>
       <Model>A5</Model>
       <ManufacturingYear>2011</ManufacturingYear>
       <Transmission>Автоматическая</Transmission>
       <EnginePower>245</EnginePower>
-      <WorkType>Ремонт электрики в машинах</WorkType>
-      <StartDate>2017-09-11T07:50:36</StartDate>
-      <EndDate>2017-09-25T12:40:09</EndDate>
-      <Cost>6611.0000</Cost>
+      <WorkType>Обслуживание и ремонт кондиционеров в авто</WorkType>
+      <StartDate>2018-07-04T01:54:42</StartDate>
+      <EndDate>2018-08-04T01:54:42</EndDate>
+      <Cost>7000.0000</Cost>
     </Order>
     <Order>
-      <Id>36</Id>
-      <Make>Audi</Make>
-      <Model>A6</Model>
-      <ManufacturingYear>2016</ManufacturingYear>
-      <Transmission>Механическая</Transmission>
-      <EnginePower>190</EnginePower>
-      <WorkType>Регламентное ТО</WorkType>
-      <StartDate>2017-01-14T14:34:06</StartDate>
-      <EndDate>2017-04-15T21:20:53</EndDate>
-      <Cost>6328.0000</Cost>
-    </Order>
-    <Order>
-      <Id>37</Id>
+      <Id>14</Id>
       <Make>Audi</Make>
       <Model>A7</Model>
-      <ManufacturingYear>2018</ManufacturingYear>
+      <ManufacturingYear>2012</ManufacturingYear>
       <Transmission>Автоматическая</Transmission>
-      <EnginePower>333</EnginePower>
+      <EnginePower>310</EnginePower>
       <WorkType>Ремонт коробок передач</WorkType>
-      <StartDate>2018-01-27T17:01:44</StartDate>
-      <EndDate>2018-03-29T03:12:26</EndDate>
-      <Cost>9970.0000</Cost>
+      <StartDate>2018-05-05T14:53:38</StartDate>
+      <EndDate>2018-06-05T14:53:38</EndDate>
+      <Cost>6550.0000</Cost>
     </Order>
     <Order>
-      <Id>38</Id>
-      <Make>Audi</Make>
-      <Model>A8</Model>
-      <ManufacturingYear>2000</ManufacturingYear>
-      <Transmission>Автоматическая</Transmission>
-      <EnginePower>420</EnginePower>
-      <WorkType>Обслуживание и ремонт двигателей</WorkType>
-      <StartDate>2018-03-29T19:05:46</StartDate>
-      <EndDate>2018-07-16T20:23:25</EndDate>
-      <Cost>4328.0000</Cost>
-    </Order>
-    <Order>
-      <Id>39</Id>
-      <Make>BMW</Make>
-      <Model>i3</Model>
-      <ManufacturingYear>2014</ManufacturingYear>
-      <Transmission>Автоматическая</Transmission>
-      <EnginePower>34</EnginePower>
-      <WorkType>Обслуживание и ремонт кондиционеров в авто</WorkType>
-      <StartDate>2017-07-31T00:05:29</StartDate>
-      <EndDate>2017-11-07T04:01:43</EndDate>
-      <Cost>772.0000</Cost>
-    </Order>
-    <Order>
-      <Id>40</Id>
-      <Make>BMW</Make>
-      <Model>i8</Model>
-      <ManufacturingYear>2016</ManufacturingYear>
-      <Transmission>Автоматическая</Transmission>
-      <EnginePower>231</EnginePower>
-      <WorkType>Регламентное ТО</WorkType>
-      <StartDate>2017-08-28T17:09:50</StartDate>
-      <EndDate>2017-08-30T01:23:57</EndDate>
-      <Cost>711.0000</Cost>
-    </Order>
-    <Order>
-      <Id>41</Id>
+      <Id>15</Id>
       <Make>BMW</Make>
       <Model>X1</Model>
       <ManufacturingYear>2012</ManufacturingYear>
       <Transmission>Механическая</Transmission>
       <EnginePower>245</EnginePower>
-      <WorkType>Обслуживание и ремонт кондиционеров в авто</WorkType>
-      <StartDate>2018-04-10T22:00:52</StartDate>
-      <EndDate>2018-04-19T06:52:31</EndDate>
-      <Cost>7185.0000</Cost>
+      <WorkType>Регламентное ТО</WorkType>
+      <StartDate>2015-09-26T18:51:00</StartDate>
+      <EndDate>2015-10-26T18:51:00</EndDate>
+      <Cost>550.0000</Cost>
     </Order>
     <Order>
-      <Id>42</Id>
+      <Id>16</Id>
+      <Make>BMW</Make>
+      <Model>X3</Model>
+      <ManufacturingYear>2010</ManufacturingYear>
+      <Transmission>Механическая</Transmission>
+      <EnginePower>143</EnginePower>
+      <WorkType>Ремонт коробок передач</WorkType>
+      <StartDate>2017-04-25T08:14:20</StartDate>
+      <EndDate>2017-05-25T08:14:20</EndDate>
+      <Cost>900.0000</Cost>
+    </Order>
+    <Order>
+      <Id>17</Id>
+      <Make>BMW</Make>
+      <Model>X3</Model>
+      <ManufacturingYear>2010</ManufacturingYear>
+      <Transmission>Автоматическая</Transmission>
+      <EnginePower>177</EnginePower>
+      <WorkType>Обслуживание и ремонт двигателей</WorkType>
+      <StartDate>2017-08-03T21:33:28</StartDate>
+      <EndDate>2017-09-03T21:33:28</EndDate>
+      <Cost>3424.0000</Cost>
+    </Order>
+    <Order>
+      <Id>18</Id>
+      <Make>BMW</Make>
+      <Model>i3</Model>
+      <ManufacturingYear>2013</ManufacturingYear>
+      <Transmission>Автоматическая</Transmission>
+      <EnginePower>34</EnginePower>
+      <WorkType>Кузовной ремонт</WorkType>
+      <StartDate>2017-05-03T20:50:35</StartDate>
+      <EndDate>2017-06-03T20:50:35</EndDate>
+      <Cost>1900.0000</Cost>
+    </Order>
+    <Order>
+      <Id>19</Id>
+      <Make>BMW</Make>
+      <Model>i8</Model>
+      <ManufacturingYear>2013</ManufacturingYear>
+      <Transmission>Автоматическая</Transmission>
+      <EnginePower>231</EnginePower>
+      <WorkType>Ремонт ходовой части, балансировка, развал-схождения</WorkType>
+      <StartDate>2015-04-07T05:15:01</StartDate>
+      <EndDate>2015-05-07T05:15:01</EndDate>
+      <Cost>9000.0000</Cost>
+    </Order>
+    <Order>
+      <Id>20</Id>
+      <Make>BMW</Make>
+      <Model>X1</Model>
+      <ManufacturingYear>2012</ManufacturingYear>
+      <Transmission>Механическая</Transmission>
+      <EnginePower>245</EnginePower>
+      <WorkType>Ремонт электрики в машинах</WorkType>
+      <StartDate>2015-10-04T00:13:53</StartDate>
+      <EndDate>2015-11-04T00:13:53</EndDate>
+      <Cost>5000.0000</Cost>
+    </Order>
+    <Order>
+      <Id>21</Id>
       <Make>BMW</Make>
       <Model>X3</Model>
       <ManufacturingYear>2010</ManufacturingYear>
       <Transmission>Автоматическая</Transmission>
       <EnginePower>177</EnginePower>
       <WorkType>Обслуживание и ремонт кондиционеров в авто</WorkType>
-      <StartDate>2017-11-06T13:58:29</StartDate>
-      <EndDate>2018-02-08T10:40:46</EndDate>
-      <Cost>6521.0000</Cost>
+      <StartDate>2017-04-26T12:17:43</StartDate>
+      <EndDate>2017-05-26T12:17:43</EndDate>
+      <Cost>3050.0000</Cost>
     </Order>
     <Order>
-      <Id>43</Id>
+      <Id>22</Id>
       <Make>BMW</Make>
       <Model>X4</Model>
       <ManufacturingYear>2014</ManufacturingYear>
       <Transmission>Автоматическая</Transmission>
       <EnginePower>190</EnginePower>
-      <WorkType>Ремонт коробок передач</WorkType>
-      <StartDate>2016-05-24T19:50:46</StartDate>
-      <EndDate>2017-05-03T15:01:06</EndDate>
-      <Cost>7147.0000</Cost>
+      <WorkType>Шиномонтажные работы</WorkType>
+      <StartDate>2016-04-22T18:48:58</StartDate>
+      <EndDate>2016-05-22T18:48:58</EndDate>
+      <Cost>4560.0000</Cost>
     </Order>
     <Order>
-      <Id>44</Id>
+      <Id>23</Id>
+      <Make>Audi</Make>
+      <Model>A3</Model>
+      <ManufacturingYear>1996</ManufacturingYear>
+      <Transmission>Механическая</Transmission>
+      <EnginePower>101</EnginePower>
+      <WorkType>Регламентное ТО</WorkType>
+      <StartDate>2016-08-03T11:35:25</StartDate>
+      <EndDate>2016-09-03T11:35:25</EndDate>
+      <Cost>600.0000</Cost>
+    </Order>
+    <Order>
+      <Id>24</Id>
       <Make>BMW</Make>
       <Model>X5</Model>
       <ManufacturingYear>2017</ManufacturingYear>
       <Transmission>Автоматическая</Transmission>
       <EnginePower>450</EnginePower>
+      <WorkType>Ремонт коробок передач</WorkType>
+      <StartDate>2017-06-04T01:59:48</StartDate>
+      <EndDate>2017-07-04T01:59:48</EndDate>
+      <Cost>700.0000</Cost>
+    </Order>
+    <Order>
+      <Id>25</Id>
+      <Make>Audi</Make>
+      <Model>A4</Model>
+      <ManufacturingYear>1995</ManufacturingYear>
+      <Transmission>Автоматическая</Transmission>
+      <EnginePower>125</EnginePower>
+      <WorkType>Обслуживание и ремонт двигателей</WorkType>
+      <StartDate>2016-08-21T09:55:12</StartDate>
+      <EndDate>2016-09-21T09:55:12</EndDate>
+      <Cost>1200.0000</Cost>
+    </Order>
+    <Order>
+      <Id>26</Id>
+      <Make>Audi</Make>
+      <Model>A5</Model>
+      <ManufacturingYear>2014</ManufacturingYear>
+      <Transmission>Вариатор</Transmission>
+      <EnginePower>204</EnginePower>
+      <WorkType>Кузовной ремонт</WorkType>
+      <StartDate>2017-08-24T11:00:54</StartDate>
+      <EndDate>2017-09-24T11:00:54</EndDate>
+      <Cost>5600.0000</Cost>
+    </Order>
+    <Order>
+      <Id>27</Id>
+      <Make>Audi</Make>
+      <Model>A6</Model>
+      <ManufacturingYear>1994</ManufacturingYear>
+      <Transmission>Автоматическая</Transmission>
+      <EnginePower>90</EnginePower>
+      <WorkType>Ремонт ходовой части, балансировка, развал-схождения</WorkType>
+      <StartDate>2015-07-12T09:08:56</StartDate>
+      <EndDate>2015-08-12T09:08:56</EndDate>
+      <Cost>8800.0000</Cost>
+    </Order>
+    <Order>
+      <Id>28</Id>
+      <Make>Audi</Make>
+      <Model>A7</Model>
+      <ManufacturingYear>2010</ManufacturingYear>
+      <Transmission>Автоматическая</Transmission>
+      <EnginePower>204</EnginePower>
+      <WorkType>Ремонт электрики в машинах</WorkType>
+      <StartDate>2017-03-01T22:25:07</StartDate>
+      <EndDate>2017-04-01T22:25:07</EndDate>
+      <Cost>3000.0000</Cost>
+    </Order>
+    <Order>
+      <Id>29</Id>
+      <Make>BMW</Make>
+      <Model>i8</Model>
+      <ManufacturingYear>2016</ManufacturingYear>
+      <Transmission>Автоматическая</Transmission>
+      <EnginePower>231</EnginePower>
+      <WorkType>Обслуживание и ремонт кондиционеров в авто</WorkType>
+      <StartDate>2016-08-22T15:30:46</StartDate>
+      <EndDate>2016-09-22T15:30:46</EndDate>
+      <Cost>3000.0000</Cost>
+    </Order>
+    <Order>
+      <Id>30</Id>
+      <Make>Audi</Make>
+      <Model>A1</Model>
+      <ManufacturingYear>2011</ManufacturingYear>
+      <Transmission>Механическая</Transmission>
+      <EnginePower>90</EnginePower>
+      <WorkType>Шиномонтажные работы</WorkType>
+      <StartDate>2018-09-03T05:36:29</StartDate>
+      <EndDate>2018-10-03T05:36:29</EndDate>
+      <Cost>5080.0000</Cost>
+    </Order>
+    <Order>
+      <Id>31</Id>
+      <Make>Audi</Make>
+      <Model>A3</Model>
+      <ManufacturingYear>2015</ManufacturingYear>
+      <Transmission>Механическая</Transmission>
+      <EnginePower>150</EnginePower>
+      <WorkType>Шиномонтажные работы</WorkType>
+      <StartDate>2015-04-21T20:33:46</StartDate>
+      <EndDate>2015-05-21T20:33:46</EndDate>
+      <Cost>9510.0000</Cost>
+    </Order>
+    <Order>
+      <Id>32</Id>
+      <Make>Audi</Make>
+      <Model>A1</Model>
+      <ManufacturingYear>2010</ManufacturingYear>
+      <Transmission>Автоматическая</Transmission>
+      <EnginePower>122</EnginePower>
+      <WorkType>Обслуживание и ремонт кондиционеров в авто</WorkType>
+      <StartDate>2016-10-01T05:06:01</StartDate>
+      <EndDate>2016-11-01T05:06:01</EndDate>
+      <Cost>3000.0000</Cost>
+    </Order>
+    <Order>
+      <Id>33</Id>
+      <Make>Audi</Make>
+      <Model>A8</Model>
+      <ManufacturingYear>1998</ManufacturingYear>
+      <Transmission>Автоматическая</Transmission>
+      <EnginePower>150</EnginePower>
+      <WorkType>Ремонт электрики в машинах</WorkType>
+      <StartDate>2016-09-14T14:00:55</StartDate>
+      <EndDate>2016-10-14T14:00:55</EndDate>
+      <Cost>3000.0000</Cost>
+    </Order>
+    <Order>
+      <Id>34</Id>
+      <Make>Audi</Make>
+      <Model>A1</Model>
+      <ManufacturingYear>2013</ManufacturingYear>
+      <Transmission>Автоматическая</Transmission>
+      <EnginePower>140</EnginePower>
+      <WorkType>Ремонт ходовой части, балансировка, развал-схождения</WorkType>
+      <StartDate>2018-07-08T05:50:09</StartDate>
+      <EndDate>2018-08-08T05:50:09</EndDate>
+      <Cost>6660.0000</Cost>
+    </Order>
+    <Order>
+      <Id>35</Id>
+      <Make>Audi</Make>
+      <Model>A2</Model>
+      <ManufacturingYear>2006</ManufacturingYear>
+      <Transmission>Механическая</Transmission>
+      <EnginePower>115</EnginePower>
+      <WorkType>Кузовной ремонт</WorkType>
+      <StartDate>2017-05-29T04:00:40</StartDate>
+      <EndDate>2017-06-29T04:00:40</EndDate>
+      <Cost>6650.0000</Cost>
+    </Order>
+    <Order>
+      <Id>36</Id>
+      <Make>BMW</Make>
+      <Model>X1</Model>
+      <ManufacturingYear>2013</ManufacturingYear>
+      <Transmission>Механическая</Transmission>
+      <EnginePower>245</EnginePower>
+      <WorkType>Обслуживание и ремонт двигателей</WorkType>
+      <StartDate>2018-05-02T14:03:08</StartDate>
+      <EndDate>2018-06-02T14:03:08</EndDate>
+      <Cost>640.0000</Cost>
+    </Order>
+    <Order>
+      <Id>37</Id>
+      <Make>Audi</Make>
+      <Model>A4</Model>
+      <ManufacturingYear>2001</ManufacturingYear>
+      <Transmission>Автоматическая</Transmission>
+      <EnginePower>180</EnginePower>
+      <WorkType>Ремонт коробок передач</WorkType>
+      <StartDate>2018-09-24T15:48:11</StartDate>
+      <EndDate>2018-10-24T15:48:11</EndDate>
+      <Cost>9970.0000</Cost>
+    </Order>
+    <Order>
+      <Id>38</Id>
+      <Make>Audi</Make>
+      <Model>A5</Model>
+      <ManufacturingYear>2011</ManufacturingYear>
+      <Transmission>Вариатор</Transmission>
+      <EnginePower>190</EnginePower>
       <WorkType>Регламентное ТО</WorkType>
-      <StartDate>2018-12-05T16:52:20</StartDate>
+      <StartDate>2017-02-26T00:59:50</StartDate>
+      <EndDate>2017-03-26T00:59:50</EndDate>
+      <Cost>4300.0000</Cost>
+    </Order>
+    <Order>
+      <Id>39</Id>
+      <Make>Audi</Make>
+      <Model>A6</Model>
+      <ManufacturingYear>2018</ManufacturingYear>
+      <Transmission>Автоматическая</Transmission>
+      <EnginePower>218</EnginePower>
+      <WorkType>Ремонт коробок передач</WorkType>
+      <StartDate>2018-07-16T15:35:30</StartDate>
       <EndDate />
-      <Cost>9168.0000</Cost>
+      <Cost>800.0000</Cost>
+    </Order>
+    <Order>
+      <Id>40</Id>
+      <Make>Audi</Make>
+      <Model>A2</Model>
+      <ManufacturingYear>2007</ManufacturingYear>
+      <Transmission>Механическая</Transmission>
+      <EnginePower>115</EnginePower>
+      <WorkType>Обслуживание и ремонт двигателей</WorkType>
+      <StartDate>2018-10-07T03:07:29</StartDate>
+      <EndDate>2018-11-07T03:07:29</EndDate>
+      <Cost>900.0000</Cost>
+    </Order>
+    <Order>
+      <Id>41</Id>
+      <Make>BMW</Make>
+      <Model>X4</Model>
+      <ManufacturingYear>2014</ManufacturingYear>
+      <Transmission>Автоматическая</Transmission>
+      <EnginePower>190</EnginePower>
+      <WorkType>Кузовной ремонт</WorkType>
+      <StartDate>2015-11-25T04:15:13</StartDate>
+      <EndDate>2015-12-25T04:15:13</EndDate>
+      <Cost>1000.0000</Cost>
+    </Order>
+    <Order>
+      <Id>42</Id>
+      <Make>Audi</Make>
+      <Model>A8</Model>
+      <ManufacturingYear>2000</ManufacturingYear>
+      <Transmission>Автоматическая</Transmission>
+      <EnginePower>420</EnginePower>
+      <WorkType>Ремонт ходовой части, балансировка, развал-схождения</WorkType>
+      <StartDate>2016-04-12T10:17:07</StartDate>
+      <EndDate>2016-05-12T10:17:07</EndDate>
+      <Cost>2000.0000</Cost>
+    </Order>
+    <Order>
+      <Id>43</Id>
+      <Make>Audi</Make>
+      <Model>A6</Model>
+      <ManufacturingYear>2016</ManufacturingYear>
+      <Transmission>Механическая</Transmission>
+      <EnginePower>190</EnginePower>
+      <WorkType>Ремонт электрики в машинах</WorkType>
+      <StartDate>2018-11-30T15:29:30</StartDate>
+      <EndDate />
+      <Cost>3000.0000</Cost>
+    </Order>
+    <Order>
+      <Id>44</Id>
+      <Make>Audi</Make>
+      <Model>A7</Model>
+      <ManufacturingYear>2018</ManufacturingYear>
+      <Transmission>Автоматическая</Transmission>
+      <EnginePower>333</EnginePower>
+      <WorkType>Обслуживание и ремонт кондиционеров в авто</WorkType>
+      <StartDate>2018-07-31T02:39:58</StartDate>
+      <EndDate />
+      <Cost>4000.0000</Cost>
     </Order>
     <Order>
       <Id>45</Id>
@@ -536,390 +536,390 @@
       <ManufacturingYear>2014</ManufacturingYear>
       <Transmission>Автоматическая</Transmission>
       <EnginePower>258</EnginePower>
-      <WorkType>Ремонт электрики в машинах</WorkType>
-      <StartDate>2017-08-23T19:17:41</StartDate>
-      <EndDate>2017-09-15T17:30:04</EndDate>
-      <Cost>3880.0000</Cost>
+      <WorkType>Шиномонтажные работы</WorkType>
+      <StartDate>2016-11-22T11:17:48</StartDate>
+      <EndDate>2016-12-22T11:17:48</EndDate>
+      <Cost>5000.0000</Cost>
     </Order>
     <Order>
       <Id>46</Id>
+      <Make>Audi</Make>
+      <Model>A7</Model>
+      <ManufacturingYear>2018</ManufacturingYear>
+      <Transmission>Автоматическая</Transmission>
+      <EnginePower>333</EnginePower>
+      <WorkType>Шиномонтажные работы</WorkType>
+      <StartDate>2018-01-07T05:16:54</StartDate>
+      <EndDate>2018-02-07T05:16:54</EndDate>
+      <Cost>6000.0000</Cost>
+    </Order>
+    <Order>
+      <Id>47</Id>
       <Make>BMW</Make>
       <Model>X5</Model>
       <ManufacturingYear>2017</ManufacturingYear>
       <Transmission>Автоматическая</Transmission>
       <EnginePower>450</EnginePower>
-      <WorkType>Обслуживание и ремонт двигателей</WorkType>
-      <StartDate>2017-04-10T22:00:52</StartDate>
-      <EndDate>2017-04-19T06:52:31</EndDate>
-      <Cost>7185.0000</Cost>
-    </Order>
-    <Order>
-      <Id>47</Id>
-      <Make>Audi</Make>
-      <Model>A5</Model>
-      <ManufacturingYear>2014</ManufacturingYear>
-      <Transmission>Вариатор</Transmission>
-      <EnginePower>204</EnginePower>
-      <WorkType>Ремонт коробок передач</WorkType>
-      <StartDate>2018-11-06T13:58:29</StartDate>
-      <EndDate>2019-02-08T10:40:46</EndDate>
-      <Cost>6521.0000</Cost>
+      <WorkType>Шиномонтажные работы</WorkType>
+      <StartDate>2018-06-02T09:22:48</StartDate>
+      <EndDate>2018-07-02T09:22:48</EndDate>
+      <Cost>7000.0000</Cost>
     </Order>
     <Order>
       <Id>48</Id>
       <Make>Audi</Make>
-      <Model>A6</Model>
-      <ManufacturingYear>1994</ManufacturingYear>
+      <Model>A3</Model>
+      <ManufacturingYear>1996</ManufacturingYear>
       <Transmission>Автоматическая</Transmission>
-      <EnginePower>90</EnginePower>
+      <EnginePower>125</EnginePower>
       <WorkType>Обслуживание и ремонт кондиционеров в авто</WorkType>
-      <StartDate>2017-05-03T19:50:46</StartDate>
-      <EndDate>2017-05-23T15:01:06</EndDate>
-      <Cost>7147.0000</Cost>
+      <StartDate>2017-11-24T13:39:58</StartDate>
+      <EndDate>2017-12-24T13:39:58</EndDate>
+      <Cost>8000.0000</Cost>
     </Order>
     <Order>
       <Id>49</Id>
-      <Make>Audi</Make>
-      <Model>A7</Model>
-      <ManufacturingYear>2010</ManufacturingYear>
+      <Make>BMW</Make>
+      <Model>i3</Model>
+      <ManufacturingYear>2014</ManufacturingYear>
       <Transmission>Автоматическая</Transmission>
-      <EnginePower>204</EnginePower>
-      <WorkType>Шиномонтажные работы</WorkType>
-      <StartDate>2017-12-05T16:52:20</StartDate>
-      <EndDate>2018-01-10T09:18:26</EndDate>
-      <Cost>9168.0000</Cost>
+      <EnginePower>34</EnginePower>
+      <WorkType>Ремонт электрики в машинах</WorkType>
+      <StartDate>2016-08-20T19:33:18</StartDate>
+      <EndDate>2016-09-20T19:33:18</EndDate>
+      <Cost>9000.0000</Cost>
     </Order>
     <Order>
       <Id>50</Id>
       <Make>Audi</Make>
-      <Model>A8</Model>
-      <ManufacturingYear>1998</ManufacturingYear>
-      <Transmission>Автоматическая</Transmission>
-      <EnginePower>150</EnginePower>
+      <Model>A4</Model>
+      <ManufacturingYear>2015</ManufacturingYear>
+      <Transmission>Механическая</Transmission>
+      <EnginePower>190</EnginePower>
       <WorkType>Ремонт коробок передач</WorkType>
-      <StartDate>2017-01-23T19:17:41</StartDate>
-      <EndDate>2017-02-15T17:30:04</EndDate>
-      <Cost>3880.0000</Cost>
+      <StartDate>2017-11-27T10:13:53</StartDate>
+      <EndDate>2017-12-27T10:13:53</EndDate>
+      <Cost>9500.0000</Cost>
     </Order>
   </Orders>
   <Clients>
     <Client>
       <Id>1</Id>
-      <Surname>Цуцкиха</Surname>
-      <Name>Валентина</Name>
-      <Patronymic>Юлиевна</Patronymic>
+      <Surname>Боброва</Surname>
+      <Name>Валерия</Name>
+      <Patronymic>Потаповна</Patronymic>
       <BirthYear>1965</BirthYear>
       <PhoneNumber>78297759405</PhoneNumber>
     </Client>
     <Client>
       <Id>2</Id>
-      <Surname>Дагина</Surname>
-      <Name>Любовь</Name>
-      <Patronymic>Леонидовна</Patronymic>
+      <Surname>Устинов</Surname>
+      <Name>Агап</Name>
+      <Patronymic>Елизарович</Patronymic>
       <BirthYear>1979</BirthYear>
       <PhoneNumber>77798062300</PhoneNumber>
     </Client>
     <Client>
       <Id>3</Id>
-      <Surname>Ивашкин</Surname>
-      <Name>Владимир</Name>
-      <Patronymic>Юриевич</Patronymic>
+      <Surname>Корепанов</Surname>
+      <Name>Бронислав</Name>
+      <Patronymic>Остапович</Patronymic>
       <BirthYear>1988</BirthYear>
       <PhoneNumber>78508343408</PhoneNumber>
     </Client>
     <Client>
       <Id>4</Id>
-      <Surname>Энгалычева</Surname>
-      <Name>Евгения</Name>
-      <Patronymic>Казимировна</Patronymic>
+      <Surname>Бобрикова</Surname>
+      <Name>Яна</Name>
+      <Patronymic>Филипповна</Patronymic>
       <BirthYear>1994</BirthYear>
       <PhoneNumber>72979680491</PhoneNumber>
     </Client>
     <Client>
       <Id>5</Id>
-      <Surname>Набережнева</Surname>
-      <Name>Майя</Name>
-      <Patronymic>Александровна</Patronymic>
+      <Surname>Головнин</Surname>
+      <Name>Евграф</Name>
+      <Patronymic>Дмитриевич</Patronymic>
       <BirthYear>1979</BirthYear>
       <PhoneNumber>77837244228</PhoneNumber>
     </Client>
     <Client>
       <Id>6</Id>
-      <Surname>Клюев</Surname>
-      <Name>Александр</Name>
-      <Patronymic>Арсениевич</Patronymic>
+      <Surname>Ныркова</Surname>
+      <Name>Эмма</Name>
+      <Patronymic>Степановна</Patronymic>
       <BirthYear>1960</BirthYear>
       <PhoneNumber>72366607976</PhoneNumber>
     </Client>
     <Client>
       <Id>7</Id>
-      <Surname>Крылова</Surname>
-      <Name>Ангелина</Name>
-      <Patronymic>Анатолиевна</Patronymic>
+      <Surname>Кушнарёва</Surname>
+      <Name>Лиана</Name>
+      <Patronymic>Феликсовна</Patronymic>
       <BirthYear>1963</BirthYear>
       <PhoneNumber>77226452338</PhoneNumber>
     </Client>
     <Client>
       <Id>8</Id>
-      <Surname>Домаша</Surname>
-      <Name>Жанна</Name>
-      <Patronymic>Романовна</Patronymic>
+      <Surname>Рыбакова</Surname>
+      <Name>Христина</Name>
+      <Patronymic>Юлиевна</Patronymic>
       <BirthYear>1958</BirthYear>
       <PhoneNumber>73878408501</PhoneNumber>
     </Client>
     <Client>
       <Id>9</Id>
-      <Surname>Агейкина</Surname>
-      <Name>Анна</Name>
-      <Patronymic>Николаевна</Patronymic>
+      <Surname>Коржева</Surname>
+      <Name>Маргарита</Name>
+      <Patronymic>Юлиевна</Patronymic>
       <BirthYear>1985</BirthYear>
       <PhoneNumber>76731758100</PhoneNumber>
     </Client>
     <Client>
       <Id>10</Id>
-      <Surname>Енотова</Surname>
-      <Name>Владислава</Name>
-      <Patronymic>Александровна</Patronymic>
+      <Surname>Лялюшкина</Surname>
+      <Name>Берта</Name>
+      <Patronymic>Иосифовна</Patronymic>
       <BirthYear>1979</BirthYear>
       <PhoneNumber>72188907649</PhoneNumber>
     </Client>
     <Client>
       <Id>11</Id>
-      <Surname>Яров</Surname>
-      <Name>Гаврила</Name>
-      <Patronymic>Трофимович</Patronymic>
+      <Surname>Листунова</Surname>
+      <Name>Надежда</Name>
+      <Patronymic>Филипповна</Patronymic>
       <BirthYear>1985</BirthYear>
       <PhoneNumber>71837120517</PhoneNumber>
     </Client>
     <Client>
       <Id>12</Id>
-      <Surname>Букова</Surname>
-      <Name>Владислава</Name>
-      <Patronymic>Виталиевна</Patronymic>
+      <Surname>Янборисов</Surname>
+      <Name>Евдоким</Name>
+      <Patronymic>Родионович</Patronymic>
       <BirthYear>1998</BirthYear>
       <PhoneNumber>73041141724</PhoneNumber>
     </Client>
     <Client>
       <Id>13</Id>
-      <Surname>Кодица</Surname>
-      <Name>Элеонора</Name>
-      <Patronymic>Елисеевна</Patronymic>
+      <Surname>Татаринцева</Surname>
+      <Name>Дарья</Name>
+      <Patronymic>Степановна</Patronymic>
       <BirthYear>1992</BirthYear>
       <PhoneNumber>74981335852</PhoneNumber>
     </Client>
     <Client>
       <Id>14</Id>
-      <Surname>Александрина</Surname>
-      <Name>Татьяна</Name>
-      <Patronymic>Федотовна</Patronymic>
+      <Surname>Белочкина</Surname>
+      <Name>Мария</Name>
+      <Patronymic>Данилевна</Patronymic>
       <BirthYear>1984</BirthYear>
       <PhoneNumber>79283728127</PhoneNumber>
     </Client>
     <Client>
       <Id>15</Id>
-      <Surname>Третьяков</Surname>
-      <Name>Чеслав</Name>
-      <Patronymic>Евграфович</Patronymic>
+      <Surname>Кузьминыха</Surname>
+      <Name>Алла</Name>
+      <Patronymic>Федотовна</Patronymic>
       <BirthYear>1999</BirthYear>
       <PhoneNumber>72649765637</PhoneNumber>
     </Client>
     <Client>
       <Id>16</Id>
-      <Surname>Рубцова</Surname>
-      <Name>Анастасия</Name>
-      <Patronymic>Карповна</Patronymic>
+      <Surname>Мясников</Surname>
+      <Name>Илья</Name>
+      <Patronymic>Ипатиевич</Patronymic>
       <BirthYear>1989</BirthYear>
       <PhoneNumber>76022477311</PhoneNumber>
     </Client>
     <Client>
       <Id>17</Id>
-      <Surname>Эзерин</Surname>
-      <Name>Эрнст</Name>
-      <Patronymic>Иванович</Patronymic>
+      <Surname>Петрова</Surname>
+      <Name>Алина</Name>
+      <Patronymic>Владленовна</Patronymic>
       <BirthYear>1987</BirthYear>
       <PhoneNumber>77061825363</PhoneNumber>
     </Client>
     <Client>
       <Id>18</Id>
-      <Surname>Огурцов</Surname>
-      <Name>Денис</Name>
-      <Patronymic>Остапович</Patronymic>
+      <Surname>Танков</Surname>
+      <Name>?Август</Name>
+      <Patronymic>Викентиевич</Patronymic>
       <BirthYear>1969</BirthYear>
       <PhoneNumber>73946198993</PhoneNumber>
     </Client>
     <Client>
       <Id>19</Id>
-      <Surname>Грефа</Surname>
-      <Name>Ирина</Name>
-      <Patronymic>Никитевна</Patronymic>
+      <Surname>Ханинова</Surname>
+      <Name>Валентина</Name>
+      <Patronymic>Яновна</Patronymic>
       <BirthYear>1977</BirthYear>
       <PhoneNumber>77766977819</PhoneNumber>
     </Client>
     <Client>
       <Id>20</Id>
-      <Surname>Баландина</Surname>
-      <Name>Мария</Name>
-      <Patronymic>Казимировна</Patronymic>
+      <Surname>Яковенко</Surname>
+      <Name>Яна</Name>
+      <Patronymic>Александровна</Patronymic>
       <BirthYear>1989</BirthYear>
       <PhoneNumber>71526928545</PhoneNumber>
     </Client>
     <Client>
       <Id>21</Id>
-      <Surname>Симонов</Surname>
-      <Name>Чеслав</Name>
-      <Patronymic>Герасимович</Patronymic>
+      <Surname>Портнов</Surname>
+      <Name>Антип</Name>
+      <Patronymic>Евгениевич</Patronymic>
       <BirthYear>1981</BirthYear>
       <PhoneNumber>78081121024</PhoneNumber>
     </Client>
     <Client>
       <Id>22</Id>
-      <Surname>Щепкин</Surname>
-      <Name>Вениамин</Name>
-      <Patronymic>Алексеевич</Patronymic>
+      <Surname>Кручинина</Surname>
+      <Name>Екатерина</Name>
+      <Patronymic>Виталиевна</Patronymic>
       <BirthYear>1991</BirthYear>
       <PhoneNumber>72566936003</PhoneNumber>
     </Client>
     <Client>
       <Id>23</Id>
-      <Surname>Попырин</Surname>
-      <Name>Тимур</Name>
-      <Patronymic>Георгиевич</Patronymic>
+      <Surname>Тетерев</Surname>
+      <Name>Захар</Name>
+      <Patronymic>Титович</Patronymic>
       <BirthYear>1968</BirthYear>
       <PhoneNumber>76644805771</PhoneNumber>
     </Client>
     <Client>
       <Id>24</Id>
-      <Surname>Паршин</Surname>
-      <Name>Евстигней</Name>
-      <Patronymic>Чеславович</Patronymic>
+      <Surname>Эссена</Surname>
+      <Name>Ольга</Name>
+      <Patronymic>Евгениевна</Patronymic>
       <BirthYear>1969</BirthYear>
       <PhoneNumber>72043795324</PhoneNumber>
     </Client>
     <Client>
       <Id>25</Id>
-      <Surname>Шарапов</Surname>
-      <Name>Виссарион</Name>
-      <Patronymic>Феликсович</Patronymic>
+      <Surname>Букова</Surname>
+      <Name>Оксана</Name>
+      <Patronymic>Елизаровна</Patronymic>
       <BirthYear>1960</BirthYear>
       <PhoneNumber>71993077595</PhoneNumber>
     </Client>
     <Client>
       <Id>26</Id>
-      <Surname>Корнеев</Surname>
-      <Name>Терентий</Name>
-      <Patronymic>Андроникович</Patronymic>
+      <Surname>Хлебов</Surname>
+      <Name>Лев</Name>
+      <Patronymic>Евграфович</Patronymic>
       <BirthYear>1987</BirthYear>
       <PhoneNumber>71291578191</PhoneNumber>
     </Client>
     <Client>
       <Id>27</Id>
-      <Surname>Акулова</Surname>
-      <Name>Марианна</Name>
-      <Patronymic>Германовна</Patronymic>
+      <Surname>Аленин</Surname>
+      <Name>Иосиф</Name>
+      <Patronymic>Федотович</Patronymic>
       <BirthYear>1975</BirthYear>
       <PhoneNumber>71256864699</PhoneNumber>
     </Client>
     <Client>
       <Id>28</Id>
-      <Surname>Янкилович</Surname>
-      <Name>Василий</Name>
-      <Patronymic>Моисеевич</Patronymic>
+      <Surname>Вельдина</Surname>
+      <Name>Агния</Name>
+      <Patronymic>Казимировна</Patronymic>
       <BirthYear>1973</BirthYear>
       <PhoneNumber>72881398587</PhoneNumber>
     </Client>
     <Client>
       <Id>29</Id>
-      <Surname>Кривонос</Surname>
-      <Name>Трофим</Name>
-      <Patronymic>Архипович</Patronymic>
+      <Surname>Якимычева</Surname>
+      <Name>Наталия</Name>
+      <Patronymic>Игнатиевна</Patronymic>
       <BirthYear>1966</BirthYear>
       <PhoneNumber>72156648867</PhoneNumber>
     </Client>
     <Client>
       <Id>30</Id>
-      <Surname>Стегнов</Surname>
-      <Name>Всеволод</Name>
-      <Patronymic>Мечиславович</Patronymic>
+      <Surname>Булдакова</Surname>
+      <Name>Варвара</Name>
+      <Patronymic>Афанасиевна</Patronymic>
       <BirthYear>1962</BirthYear>
       <PhoneNumber>78319298818</PhoneNumber>
     </Client>
     <Client>
       <Id>31</Id>
-      <Surname>Нутрихин</Surname>
-      <Name>Чеслав</Name>
-      <Patronymic>Потапович</Patronymic>
+      <Surname>Малиновский</Surname>
+      <Name>Филипп</Name>
+      <Patronymic>Тарасович</Patronymic>
       <BirthYear>1979</BirthYear>
       <PhoneNumber>75138326212</PhoneNumber>
     </Client>
     <Client>
       <Id>32</Id>
-      <Surname>Худовекова</Surname>
-      <Name>Вероника</Name>
-      <Patronymic>Станиславовна</Patronymic>
+      <Surname>Лобан</Surname>
+      <Name>Тарас</Name>
+      <Patronymic>Давыдович</Patronymic>
       <BirthYear>1989</BirthYear>
       <PhoneNumber>76454787410</PhoneNumber>
     </Client>
     <Client>
       <Id>33</Id>
-      <Surname>Капп</Surname>
-      <Name>Филипп</Name>
-      <Patronymic>Давыдович</Patronymic>
+      <Surname>Кошляк</Surname>
+      <Name>Михаил</Name>
+      <Patronymic>Брониславович</Patronymic>
       <BirthYear>1968</BirthYear>
       <PhoneNumber>76435694447</PhoneNumber>
     </Client>
     <Client>
       <Id>34</Id>
-      <Surname>Ахвледиани</Surname>
-      <Name>Алиса</Name>
-      <Patronymic>Никитевна</Patronymic>
+      <Surname>Корепанов</Surname>
+      <Name>Святослав</Name>
+      <Patronymic>Эрнстович</Patronymic>
       <BirthYear>1995</BirthYear>
       <PhoneNumber>78336617355</PhoneNumber>
     </Client>
     <Client>
       <Id>35</Id>
-      <Surname>Ямлиханов</Surname>
-      <Name>Емельян</Name>
-      <Patronymic>Архипович</Patronymic>
+      <Surname>Ячменькова</Surname>
+      <Name>Ариадна</Name>
+      <Patronymic>Андрияновна</Patronymic>
       <BirthYear>1961</BirthYear>
       <PhoneNumber>78684063904</PhoneNumber>
     </Client>
     <Client>
       <Id>36</Id>
-      <Surname>Китаев</Surname>
-      <Name>Семён</Name>
-      <Patronymic>Валериевич</Patronymic>
+      <Surname>Жернакова</Surname>
+      <Name>Анисья</Name>
+      <Patronymic>Глебовна</Patronymic>
       <BirthYear>1994</BirthYear>
       <PhoneNumber>77398139634</PhoneNumber>
     </Client>
     <Client>
       <Id>37</Id>
-      <Surname>Якимова</Surname>
-      <Name>Евдокия</Name>
-      <Patronymic>Федотовна</Patronymic>
+      <Surname>Лазуткина</Surname>
+      <Name>Арина</Name>
+      <Patronymic>Степановна</Patronymic>
       <BirthYear>1977</BirthYear>
       <PhoneNumber>71718548207</PhoneNumber>
     </Client>
     <Client>
       <Id>38</Id>
-      <Surname>Брагин</Surname>
-      <Name>Матвей</Name>
-      <Patronymic>Матвеевич</Patronymic>
+      <Surname>Штыкова</Surname>
+      <Name>Милена</Name>
+      <Patronymic>Тимофеевна</Patronymic>
       <BirthYear>1964</BirthYear>
       <PhoneNumber>75666175215</PhoneNumber>
     </Client>
     <Client>
       <Id>39</Id>
-      <Surname>Бойкова</Surname>
-      <Name>Марфа</Name>
-      <Patronymic>Антониновна</Patronymic>
+      <Surname>Дуванов</Surname>
+      <Name>Лавр</Name>
+      <Patronymic>Кондратович</Patronymic>
       <BirthYear>1989</BirthYear>
       <PhoneNumber>75532124492</PhoneNumber>
     </Client>
     <Client>
       <Id>40</Id>
-      <Surname>Рокоссовский</Surname>
-      <Name>Серафим</Name>
-      <Patronymic>Саввевич</Patronymic>
+      <Surname>Долженко</Surname>
+      <Name>Доминика</Name>
+      <Patronymic>Борисовна</Patronymic>
       <BirthYear>1971</BirthYear>
       <PhoneNumber>78291868294</PhoneNumber>
     </Client>
