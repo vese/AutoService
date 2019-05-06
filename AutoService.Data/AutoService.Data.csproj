@@ -54,6 +54,7 @@
     <Compile Include="DataProviders\XMLDataProvider.cs" />
     <Compile Include="DataProviders\DBDataProvider.cs" />
     <Compile Include="DataProviders\IAutoServiceDataProvider.cs" />
+    <Compile Include="ExceptionLogger.cs" />
     <Compile Include="Models\AutoServiceContext.cs" />
     <Compile Include="Models\Car.cs" />
     <Compile Include="Models\Client.cs" />

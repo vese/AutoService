@@ -1,0 +1,16 @@
+
+18:52
+System.FieldAccessException: Попытка доступа к полю, недоступному для вызывающего.
+   в AutoService.Data.DataProviders.XMLDataProvider.GetClient(Int32 orderId) в C:\Users\Илья\Documents\Visual Studio 2017\Projects\AutoService\AutoService.Data\DataProviders\XMLDataProvider.cs:строка 62
+
+18:53
+System.FieldAccessException: Попытка доступа к полю, недоступному для вызывающего.
+   в AutoService.Data.DataProviders.XMLDataProvider.GetClient(Int32 orderId) в C:\Users\Илья\Documents\Visual Studio 2017\Projects\AutoService\AutoService.Data\DataProviders\XMLDataProvider.cs:строка 62
+
+18:53
+System.FieldAccessException: Попытка доступа к полю, недоступному для вызывающего.
+   в AutoService.Data.DataProviders.XMLDataProvider.GetClient(Int32 orderId) в C:\Users\Илья\Documents\Visual Studio 2017\Projects\AutoService\AutoService.Data\DataProviders\XMLDataProvider.cs:строка 62
+
+18:54
+System.FieldAccessException: Попытка доступа к полю, недоступному для вызывающего.
+   в AutoService.Data.DataProviders.XMLDataProvider.GetClient(Int32 orderId) в C:\Users\Илья\Documents\Visual Studio 2017\Projects\AutoService\AutoService.Data\DataProviders\XMLDataProvider.cs:строка 62

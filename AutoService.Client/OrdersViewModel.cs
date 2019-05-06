@@ -22,7 +22,10 @@ namespace AutoService.Client
         {
             set
             {
-                SelectedClient = GetRequests.GetClient(value.Id, LoadedDataSource);
+                if ((SelectedClient = GetRequests.GetClient(value.Id, LoadedDataSource)) == null)
+                {
+                    MessageBox.Show("Произошла ошибка при запросе списка заказов.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
             }
         }
 
@@ -43,9 +46,15 @@ namespace AutoService.Client
         {
             GetOrdersCommand = new AsynchronousCommand(() =>
             {
+                var orders = GetRequests.GetOrders(SelectedDataSource);
+                if (orders == null)
+                {
+                    MessageBox.Show("Произошла ошибка при запросе списка заказов.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
                 Orders.Clear();
                 SelectedClient = null;
-                GetRequests.GetOrders(SelectedDataSource).ForEach(o => Orders.Add(o));
+                orders.ForEach(o => Orders.Add(o));
                 Loaded = Visibility.Visible;
                 LoadedDataSource = SelectedDataSource;
             });
