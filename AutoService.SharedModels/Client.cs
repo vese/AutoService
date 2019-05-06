@@ -10,10 +10,5 @@ namespace AutoService.SharedModels
         public string Patronymic { get; set; }
         public short BirthYear { get; set; }
         public string PhoneNumber { get; set; }
-
-        public override string ToString()
-        {
-            return $"{Surname} {Name} {Patronymic} {BirthYear} {PhoneNumber}";
-        }
     }
 }

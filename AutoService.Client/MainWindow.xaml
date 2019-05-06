@@ -3,23 +3,25 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:AutoService.Client"
         xmlns:r="clr-namespace:AutoService.SharedModels;assembly=AutoService.SharedModels"
         xmlns:l="clr-namespace:Apex.Converters;assembly=Apex"
         mc:Ignorable="d"
-        Title="Агрегатор данных от автосервисов" Height="516.86" Width="1530.024">
-    <Grid Margin="0,0,-8,0">
+        Title="Агрегатор данных от автосервисов" Width="1200" Height="600" MinWidth="600" MinHeight="400">
+    <Grid Margin="0,0,0,0">
         <Grid.Resources>
-            <l:EnumToBooleanConverter x:Key="enumToBooleanConverter" />
+            <l:EnumToBooleanConverter x:Key="enumToBooleanConverter"/>
         </Grid.Resources>
-        <Label Content="Источник данных:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,8,0,0"/>
-        <RadioButton IsChecked="{Binding Path=SelectedDataSource, Converter={StaticResource enumToBooleanConverter}, ConverterParameter={x:Static r:AutoServiceDataSource.DB}}" Content="База данных" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="125,14,0,0"/>
-        <RadioButton IsChecked="{Binding Path=SelectedDataSource, Converter={StaticResource enumToBooleanConverter}, ConverterParameter={x:Static r:AutoServiceDataSource.XML}}" Content="XML файл" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="217,14,0,0"/>
-        <RadioButton IsChecked="{Binding Path=SelectedDataSource, Converter={StaticResource enumToBooleanConverter}, ConverterParameter={x:Static r:AutoServiceDataSource.Binary}}" Content="Бинарный файл" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="295,14,0,0"/>
-        <Button Content="Загрузить данные" Command="{Binding GetOrdersCommand}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Margin="428,11,0,0"/>
-        <Label Visibility="{Binding Loaded}" Content="Загружено из" HorizontalAlignment="Left" Margin="582,8,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.6,-0.2"/>
-        <Label Visibility="{Binding Loaded}" Content="{Binding LoadedDataSource}" HorizontalAlignment="Left" Margin="660,8,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.6,-0.2"/>
-        <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding Orders}" SelectedItem="{Binding SelectedOrder}" CanUserAddRows="False" HorizontalAlignment="Left" Height="365" Margin="10,41,0,0" VerticalAlignment="Top" Width="1492">
+        <GroupBox Header="Источник данных" HorizontalAlignment="Stretch" Margin="10,0,10,0" VerticalAlignment="Top">
+            <Grid>
+                <RadioButton IsChecked="{Binding Path=SelectedDataSource, Converter={StaticResource enumToBooleanConverter}, ConverterParameter={x:Static r:AutoServiceDataSource.DB}}" Content="База данных" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,6,0,0"/>
+                <RadioButton IsChecked="{Binding Path=SelectedDataSource, Converter={StaticResource enumToBooleanConverter}, ConverterParameter={x:Static r:AutoServiceDataSource.XML}}" Content="XML файл" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="102,6,0,0"/>
+                <RadioButton IsChecked="{Binding Path=SelectedDataSource, Converter={StaticResource enumToBooleanConverter}, ConverterParameter={x:Static r:AutoServiceDataSource.Binary}}" Content="Бинарный файл" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="180,6,0,0"/>
+                <Button Content="Загрузить данные" Command="{Binding GetOrdersCommand}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Margin="291,3,0,0"/>
+                <Label Visibility="{Binding Loaded}" Content="Загружено из" HorizontalAlignment="Left" Margin="426,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.6,-0.2"/>
+                <Label Visibility="{Binding Loaded}" Content="{Binding LoadedDataSource}" HorizontalAlignment="Left" Margin="505,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.6,-0.2"/>
+            </Grid>
+        </GroupBox>
+        <DataGrid ColumnWidth="*" AutoGenerateColumns="False" ItemsSource="{Binding Orders}" SelectedItem="{Binding SelectedOrder}" IsReadOnly="True" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Margin="10,60,10,10">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Id заказа" Binding="{Binding Id}"/>
                 <DataGridTextColumn Header="Марка авто" Binding="{Binding Make}"/>
@@ -32,7 +34,32 @@
                 <DataGridTextColumn Header="Время окончания работ" Binding="{Binding EndDate}" />
                 <DataGridTextColumn Header="Стоимость работ" Binding="{Binding Cost}" />
             </DataGrid.Columns>
+            <DataGrid.RowDetailsTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Фамилия: "/>
+                            <TextBlock Text="{Binding DataContext.SelectedClient.Surname, RelativeSource={RelativeSource AncestorType=DataGrid}}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Имя: "/>
+                            <TextBlock Text="{Binding DataContext.SelectedClient.Name, RelativeSource={RelativeSource AncestorType=DataGrid}}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Отчество: "/>
+                            <TextBlock Text="{Binding DataContext.SelectedClient.Patronymic, RelativeSource={RelativeSource AncestorType=DataGrid}}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Год рождения: "/>
+                            <TextBlock Text="{Binding DataContext.SelectedClient.BirthYear, RelativeSource={RelativeSource AncestorType=DataGrid}}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Телефон: "/>
+                            <TextBlock Text="{Binding DataContext.SelectedClient.PhoneNumber, RelativeSource={RelativeSource AncestorType=DataGrid}}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </DataGrid.RowDetailsTemplate>
         </DataGrid>
-        <Label Content="{Binding SelectedClient}" HorizontalAlignment="Left" Margin="18,428,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

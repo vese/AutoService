@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace AutoService.Data
+namespace AutoService.Data.DataProviders
 {
     public interface IAutoServiceDataProvider
     {

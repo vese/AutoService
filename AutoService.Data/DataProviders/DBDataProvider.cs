@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace AutoService.Data
+namespace AutoService.Data.DataProviders
 {
     public class DBDataProvider : IAutoServiceDataProvider
     {

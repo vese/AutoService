@@ -5,7 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 
-namespace AutoService.Data
+namespace AutoService.Data.DataProviders
 {
     public class BinaryDataProvider : IAutoServiceDataProvider
     {
@@ -84,11 +84,18 @@ namespace AutoService.Data
         {
             BinaryFormatter formatter = new BinaryFormatter();
 
-            using (FileStream fs = new FileStream(dir + fileName, FileMode.OpenOrCreate))
-            {
-                var serviceData = (AutoService)formatter.Deserialize(fs);
-                return serviceData.Orders;
-            }
+            //try
+            //{
+                using (FileStream fs = new FileStream(dir + fileName, FileMode.OpenOrCreate))
+                {
+                    var serviceData = (AutoService)formatter.Deserialize(fs);
+                    return serviceData.Orders;
+                }
+            //}
+            //catch (Exception ex)
+            //{
+            //    return null;
+            //}
         }
 
         public SharedModels.Client GetClient(int orderId)

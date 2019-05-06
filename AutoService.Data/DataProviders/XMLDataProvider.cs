@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Xml.Linq;
 
-namespace AutoService.Data
+namespace AutoService.Data.DataProviders
 {
     public class XMLDataProvider : IAutoServiceDataProvider
     {

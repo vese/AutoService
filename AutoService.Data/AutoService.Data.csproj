@@ -50,10 +50,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BinaryDataProvider.cs" />
-    <Compile Include="XMLDataProvider.cs" />
-    <Compile Include="DBDataProvider.cs" />
-    <Compile Include="IAutoServiceDataProvider.cs" />
+    <Compile Include="DataProviders\BinaryDataProvider.cs" />
+    <Compile Include="DataProviders\XMLDataProvider.cs" />
+    <Compile Include="DataProviders\DBDataProvider.cs" />
+    <Compile Include="DataProviders\IAutoServiceDataProvider.cs" />
     <Compile Include="Models\AutoServiceContext.cs" />
     <Compile Include="Models\Car.cs" />
     <Compile Include="Models\Client.cs" />

@@ -1,13 +1,11 @@
 ﻿using Apex.MVVM;
 using AutoService.SharedModels;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Input;
 
 namespace AutoService.Client
 {
-    class OrdersViewModel : INotifyPropertyChanged
+    class OrdersViewModel : Notifier
     {
         private SafeObservableCollection<Order> _orders = new SafeObservableCollection<Order>();
         public SafeObservableCollection<Order> Orders
@@ -16,7 +14,7 @@ namespace AutoService.Client
             set
             {
                 _orders = value;
-                OnPropertyChanged("Orders");
+                OnPropertyChanged(nameof(Orders));
             }
         }
 
@@ -35,7 +33,7 @@ namespace AutoService.Client
             set
             {
                 _selectedClient = value;
-                OnPropertyChanged("SelectedClient");
+                OnPropertyChanged(nameof(SelectedClient));
             }
         }
 
@@ -63,7 +61,7 @@ namespace AutoService.Client
             set
             {
                 _selectedDataSource = value;
-                OnPropertyChanged("SelectedDataSource");
+                OnPropertyChanged(nameof(SelectedDataSource));
             }
         }
 
@@ -77,11 +75,11 @@ namespace AutoService.Client
             set
             {
                 _loadedDataSource = value;
-                OnPropertyChanged("LoadedDataSource");
+                OnPropertyChanged(nameof(LoadedDataSource));
             }
         }
 
-        private Visibility _loaded = Visibility.Hidden;
+        private Visibility _loaded = Visibility.Collapsed;
         public Visibility Loaded
         {
             get
@@ -91,14 +89,8 @@ namespace AutoService.Client
             set
             {
                 _loaded = value;
-                OnPropertyChanged("Loaded");
+                OnPropertyChanged(nameof(Loaded));
             }
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        public void OnPropertyChanged([CallerMemberName]string prop = "")
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
         }
     }
 }
